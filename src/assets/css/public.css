@@ -1,0 +1,92 @@
+/* 去除页面默认边框 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #333;
+  overflow-y: auto;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+
+/* 所有页面容器 */
+.page_vessel {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+/* 去除以下标签点击出现的蓝色边框 */
+a,
+button,
+input {
+  outline: medium;
+}
+
+
+/* 所有input placeholder属性透明化*/
+input::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+
+
+
+/* 所有标签不让溢出,并去除外边框 */
+* {
+  overflow: hidden;
+  margin: 0;
+}
+
+
+/* ul、li去除默认样式 */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+
+
+/* A标签去除下划线 */
+a {
+  text-decoration: none;
+}
+
+
+
+/* 1200px内容宽度 */
+.width_1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* 主颜色色调 */
+.color_0 {
+  color: #0A93ED;
+}
+
+.bg_0 {
+  background: #0A93ED;
+}
+
+
+/* 红涨绿跌色调 */
+.color_red {
+  color: #F34682;
+}
+
+.color_green {
+  color: #12AB68;
+}
+
+.bg_red {
+  background: #F34682;
+}
+
+.bg_green {
+  background: #12AB68;
+}
