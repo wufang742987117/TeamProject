@@ -1,6 +1,5 @@
 <template>
     <div>
-        <span>{{$t('message.text')}}</span>
         <el-select @change="langChange" placeholder="请选择" v-model='value'>
             <el-option
                 v-for="item in options"
@@ -16,7 +15,6 @@
 export default {
     data () {
         return {
-            title:this.$t('message.text'),//使用方式3，需刷新起效
             options:[
                 {
                 value: 'zh',

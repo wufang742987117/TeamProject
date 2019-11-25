@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-
+		<my-headers></my-headers>
     <router-view/>
+    <my-footer></my-footer>
   </div>
 </template>
 
 <script>
+import MyHeaders from '@/components/public/Head'
+import MyFooter from '@/components/public/Footer'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+	   MyHeaders,MyFooter
+	}
+  
 }
 </script>
 
