@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-		<my-headers></my-headers>
+		<my-headers></my-headers>   <!--头部-->
     <router-view/>
-    <my-footer></my-footer>
+    <my-footer></my-footer>			<!--底部-->
   </div>
 </template>
 
