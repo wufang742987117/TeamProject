@@ -3,7 +3,12 @@
     <!-- banner -->
     <el-row>
       <el-col :span="24">
-        <div class="home_banner"></div>
+        <div class="home_banner">
+          <!-- banner切换内容区域-->
+           <div class="hBanner_1">
+              
+           </div>
+        </div>
       </el-col>
     </el-row>
 
@@ -11,7 +16,7 @@
     <el-row class="notice_bg">
       <el-row class="notice_list">
         <el-col :span="21" class="notice_href">
-          <a href="javascript://">关于系统升级维护以及CNY兑换的公告</a>
+          <a href="javascript://">关于系统升级维护以及CNY兑换的公告兑换的公告兑换的公告</a>
           <a href="javascript://">关于系统升级维护以及CNY兑换的公告</a>
           <a href="javascript://">关于系统升级维护以及CNY兑换的公告</a>
           <a href="javascript://">关于系统升级维护以及CNY兑换的</a>
@@ -284,27 +289,34 @@
           </li>
         </ul>
         <div class="newsMore">
-          <a href="javascript://" class="bg_0">更多资讯</a>
+          <el-button type="primary" class="newsMoreBtn">更多资讯</el-button>
         </div>
       </el-row>
     </el-row>
 
     <!-- 下载APP-->
     <el-row class="downloadApp">
-
+      <el-row class="width_1200">
+        <h1 class="dwnTit">随时随地，指尖下载</h1>
+        <label class="dwnFont">下载APP，随时随地查看行情，轻松交易快人一步</label>
+        <div class="dwnBtn">
+          <div class="btnDown"><i></i><span>Android 下载</span></div>
+          <div class="btnDown"><i></i><span>IOS 下载</span></div>
+        </div>
+        </el-row>
     </el-row>
 
     <!-- 注册-->
     <el-row class="register">
       <el-row class="width_1200">
         <el-row class="regTit">
-            注册AICHINA全球站账号 开启数字货币之旅
+          注册AICHINA全球站账号 开启数字货币之旅
         </el-row>
-        <el-row class="regBtn">
-            <input type="text" placeholder="输入你的邮箱或者手机号" />
-            <a href="javascritp://" class="bg_0">注册</a>
+        <el-row class="regPhone">
+          <input type="text" placeholder="输入你的邮箱或者手机号" />
+          <el-button type="primary" class="regBtn">注册</el-button>
         </el-row>
-       </el-row>
+      </el-row>
     </el-row>
   </div>
 </template>
