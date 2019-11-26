@@ -4,13 +4,8 @@
     <el-row>
       <el-col :span="24">
         <div class="home_banner">
-          <!-- banner切换内容区域-->
-           <!--<div class="hBanner_1">
-							
-           </div>-->
            <el-carousel :interval="5000" height="100%">
 				      <el-carousel-item v-for="item in 4" :key="item">
-				        <h3 class="small">{{ item }}</h3>
 				      </el-carousel-item>
 				    </el-carousel>
         </div>
@@ -337,15 +332,4 @@
 
 <style>
   @import '../../assets/css/home.css';
-  .el-carousel__item h3 {
-    color: #475669;
-    font-size: 30px;
-    opacity: 0.75;
-    line-height: 650px;
-    margin: 0;
-    text-align: center;
-  }
-  .el-carousel__arrow {
-
-  }
 </style>
