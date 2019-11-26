@@ -49,9 +49,12 @@
                 </div>
             </div>
           </div>
-          <a href="javascript://" class="userDown">下载</a>
+          <div class="down-wrap" @mouseover="showDownTp()" @mouseout="hideDownTp()">
+          	<a href="javascript://" class="userDown" >下载</a>
+          </div>
+          
           <!-- 下载二维码 -->
-          <div class="downEwm" style="display:none ;">
+          <div class="downEwm" v-show="down" @mouseover="showDownBt()" @mouseout="hideDownBt()">
             <div>
               <img src="../../assets/images/img/ewm_img.png">
               <label>Android</label>
@@ -61,7 +64,10 @@
               <label>IOS</label>
             </div>
           </div>
-          <a href="javascript://" class="userEn">简体中文<i class="el-icon-caret-bottom"></i></a>
+          <div class="down-wrap">
+          	 <a href="javascript://" class="userEn">简体中文<i class="el-icon-caret-bottom"></i></a>
+          </div>
+         
           <!-- 国际化 -->
           <div class="enGjh" style="display:none ;">
             <label>简体中文</label>
@@ -92,6 +98,9 @@ export default {
                 label: 'English'
                 }
             ],
+            down:false,
+            downTop:false,
+            downBot:false,
             value:localStorage.lang || 'zh'
         }
     },
@@ -102,7 +111,28 @@ export default {
             this.value = e;
             this.$i18n.locale = e;
 //          window.location.reload()
+        },
+        showDownTp(){
+        	this.downTop = true;
+        	this.down = true;
+        },
+        showDownBt(){
+        	this.downBot = true;
+        	this.down = true;
+        },
+        hideDownTp(){
+        	this.downTop =false
+        	if(this.downBot==false) {
+        		this.down = false;
+        	}
+        },
+        hideDownBt(){
+        	this.downBot = false;
+        	if(this.downTop==false) {
+        		this.down = false;
+        	}
         }
+        
     }
 }
 </script>

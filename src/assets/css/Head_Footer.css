@@ -273,6 +273,12 @@ float: left;
   color: #EF6072;
 }
 
+.userList .down-wrap {
+	width: auto;
+	height: 60px;
+	float: left;
+}
+
 .userList .userDown{
   width: auto;
   height: 30px;
