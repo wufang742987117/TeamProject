@@ -372,10 +372,17 @@ float: left;
   display: inline-block;
   float: left;
   color: #888;
+  cursor: pointer;
 }
 .enGjh label:hover{
-  background: #eee;
-  color: #333;
+  /*background: #eee;
+  color: #333;*/
+}
+
+.enGjh label.active {
+	  background: #ddeaf3;
+    color: #6d6f73;
+    cursor: default;
 }
 
 
