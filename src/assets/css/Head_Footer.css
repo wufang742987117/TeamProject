@@ -8,6 +8,7 @@
   z-index: 999999999;
   margin-top: 0 !important;
   transition: 1s;
+  margin-top: 0;
 }
 
 
@@ -311,7 +312,13 @@
   color: #EF6072;
 }
 
-.userList .userDown {
+.userList .down-wrap {
+	width: auto;
+	height: 60px;
+	float: left;
+}
+
+.userList .userDown{
   width: auto;
   height: 30px;
   line-height: 30px;
@@ -415,9 +422,15 @@
   cursor: pointer;
 }
 
-.enGjh label:hover {
-  background: #eee;
-  color: #333;
+.enGjh label:hover{
+  /*background: #eee;
+  color: #333;*/
+}
+
+.enGjh label.active {
+	  background: #ddeaf3;
+    color: #6d6f73;
+    cursor: default;
 }
 .enGjh label.active {
    background: #ddeaf3;
