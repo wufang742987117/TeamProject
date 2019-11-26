@@ -45,6 +45,7 @@
   color: #79808a;
   display: inline-block;
   transition: 1s;
+  float: left;
 }
 
 .headNav a:hover {
@@ -313,12 +314,12 @@
 }
 
 .userList .down-wrap {
-	width: auto;
-	height: 60px;
-	float: left;
+  width: auto;
+  height: 60px;
+  float: left;
 }
 
-.userList .userDown{
+.userList .userDown {
   width: auto;
   height: 30px;
   line-height: 30px;
@@ -358,7 +359,7 @@
   border-radius: 6px;
   background: #fff;
   z-index: 999999999;
-  margin: 60px 50px 0 -150px;
+  margin: 60px 50px 0 -70px;
   padding: 20px 30px 10px 30px;
   box-sizing: border-box;
   -moz-box-shadow: 0px 0px 10px #999;
@@ -422,20 +423,21 @@
   cursor: pointer;
 }
 
-.enGjh label:hover{
+.enGjh label:hover {
   /*background: #eee;
   color: #333;*/
 }
 
 .enGjh label.active {
-	  background: #ddeaf3;
-    color: #6d6f73;
-    cursor: default;
+  background: #ddeaf3;
+  color: #6d6f73;
+  cursor: default;
 }
+
 .enGjh label.active {
-   background: #ddeaf3;
-    color: #6d6f73;
-    cursor: default;
+  background: #e7e8e8;
+  color: #000;
+  cursor: default;
 }
 
 
@@ -444,7 +446,7 @@
 
 
 /* 底部 */
-.footerBod{
+.footerBod {
   height: auto;
   overflow: hidden;
   background: #0D161D;
@@ -453,19 +455,22 @@
   margin-top: 0 !important;
   transition: 1s;
 }
-.footerLogo{
+
+.footerLogo {
   width: 100%;
   height: 28px;
   float: left;
   overflow: hidden;
 }
-.footerLogo img{
+
+.footerLogo img {
   height: 28px;
   width: auto;
   float: left;
   cursor: pointer;
 }
-.companyTitle{
+
+.companyTitle {
   width: 80%;
   height: auto;
   overflow: hidden;
@@ -474,41 +479,60 @@
   margin-top: 10px;
   float: left;
 }
-.companyTitle label{
+
+.companyTitle label {
   width: 100%;
   height: auto;
   line-height: 20px;
 }
-.social{
+
+.social {
   width: 100%;
   height: 30px;
   margin: 35px 0;
   float: left;
 }
-.social>a{
+
+.social>a {
   width: 30px;
   height: 30px;
   border-radius: 100%;
   display: inline-block;
   float: left;
-  background:#2F4557 url(../images/icon/wx_icon.png) center no-repeat;
+  background: #2F4557 url(../images/icon/wx_icon.png) center no-repeat;
   opacity: 0.7;
   transition: 1s;
 }
-.social>a:hover{
+
+.social>a:hover {
   opacity: 1;
 }
-.social .wbIcon{
+
+.social .wbIcon {
   margin-left: 30px;
-  background:#2F4557 url(../images/icon/wb_icon.png) center no-repeat;
+  background: #2F4557 url(../images/icon/wb_icon.png) center no-repeat;
 }
-.varchar{
+
+.footerLeft {
+  position: relative;
+}
+
+.footerLeft .wxEwm {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  z-index: 99;
+}
+
+.varchar {
   width: 80%;
   height: auto;
   overflow: hidden;
   float: left;
 }
-.varchar label{
+
+.varchar label {
   width: 100%;
   height: auto;
   line-height: 22px;
@@ -517,7 +541,8 @@
   float: left;
   color: #2F4557;
 }
-.footerList>div{
+
+.footerList>div {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -525,7 +550,8 @@
   padding-left: 30px;
   box-sizing: border-box;
 }
-.footerList>div h1{
+
+.footerList>div h1 {
   width: 100%;
   height: 20px;
   line-height: 20px;
@@ -535,7 +561,8 @@
   font-weight: 500;
   margin-bottom: 10px;
 }
-.footerList>div label{
+
+.footerList>div label {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -544,7 +571,8 @@
   text-align: right;
   margin-top: 10px;
 }
-.footerList>div label a{
+
+.footerList>div label a {
   width: auto;
   height: auto;
   line-height: 20px;
@@ -553,11 +581,13 @@
   font-size: 15px;
   opacity: 0.7;
 }
-.footerList>div label a:hover{
+
+.footerList>div label a:hover {
   text-decoration: underline;
   opacity: 1;
 }
-.phoneNum{
+
+.phoneNum {
   position: fixed;
   width: auto;
   height: 56px;
@@ -572,7 +602,8 @@
   transition: 1s;
   cursor: pointer;
 }
-.phoneNum label{
+
+.phoneNum label {
   width: auto;
   height: 56px;
   line-height: 56px;
@@ -581,13 +612,16 @@
   display: inline-block;
   float: left;
 }
-.phoneNum label:last-child{
+
+.phoneNum label:last-child {
   display: none;
 }
-.phoneNum:hover label:first-child{
+
+.phoneNum:hover label:first-child {
   display: none;
 }
-.phoneNum:hover label:last-child{
+
+.phoneNum:hover label:last-child {
   display: block;
 }
 
@@ -603,27 +637,31 @@
   }
 
   .headLogo {
-    margin: 16px 80px 16px 0;
+    margin: 16px 70px 16px 0;
   }
 
   .enGjh {
     right: 40px;
   }
 
-  .footerBod{
+  .footerBod {
     padding: 70px 40px;
   }
 }
 
 @media screen and (max-width:1500px) {
   .headLogo {
-    margin: 16px 70px 16px 0;
+    margin: 16px 60px 16px 0;
   }
 }
 
 @media screen and (max-width:1400px) {
   .headLogo {
-    margin: 16px 60px 16px 0;
+    margin: 16px 50px 16px 0;
+  }
+
+  .headNav a {
+    padding: 0 15px;
   }
 }
 
@@ -633,13 +671,18 @@
   }
 
   .headLogo {
-    margin: 16px 50px 16px 0;
+    margin: 16px 40px 16px 0;
+  }
+
+  .headNav a {
+    padding: 0 13px;
   }
 
   .enGjh {
     right: 30px;
   }
-  .footerBod{
+
+  .footerBod {
     padding: 70px 30px;
   }
 }
@@ -650,7 +693,7 @@
   }
 
   .headLogo {
-    margin: 16px 40px 16px 0;
+    margin: 16px 30px 16px 0;
   }
 
   .enGjh {
@@ -658,9 +701,10 @@
   }
 
   .headNav a {
-    padding: 0 15px;
+    padding: 0 12px;
   }
-  .footerBod{
+
+  .footerBod {
     padding: 70px 20px;
   }
 }

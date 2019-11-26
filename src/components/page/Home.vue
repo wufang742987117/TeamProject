@@ -4,10 +4,11 @@
     <el-row>
       <el-col :span="24">
         <div class="home_banner">
-           <el-carousel :interval="5000" height="100%">
-				      <el-carousel-item v-for="item in 4" :key="item">
-				      </el-carousel-item>
-				    </el-carousel>
+          <el-carousel :interval="5000" height="100%">
+            <el-carousel-item v-for="item in 4" :key="item">
+
+            </el-carousel-item>
+          </el-carousel>
         </div>
       </el-col>
     </el-row>
@@ -302,7 +303,7 @@
           <div class="btnDown"><i></i><span>Android {{$t('message.HEAD_DOWNWRAP')}}</span></div>
           <div class="btnDown"><i></i><span>IOS {{$t('message.HEAD_DOWNWRAP')}}</span></div>
         </div>
-        </el-row>
+      </el-row>
     </el-row>
 
     <!-- 注册-->
