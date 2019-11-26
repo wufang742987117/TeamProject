@@ -65,7 +65,7 @@
         </el-row>
         <!-- 24H电话-->
         <div class="phoneNum bg_0">
-          <label>24H电话</label>
+          <label>24H{{$t('message.FOOTER_PHONE')}}</label>
           <label>400-000-1752</label>
         </div>
     </div>

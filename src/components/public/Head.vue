@@ -75,6 +75,7 @@
           <div class="enGjh" v-show="translate" @mouseover="showTranslateBt()" @mouseout="hideTranslateBt()">
             <label :class="{'active':language=='zh'}"  @click="langChange('zh')">简体中文</label>
             <label :class="{'active':language=='en'}" @click="langChange('en')">English</label>
+            <label :class="{'active':language=='jp'}" @click="langChange('jp')">日本語</label>
           </div>
       </div>
     </div>
@@ -110,7 +111,9 @@ export default {
 	          return '简体中文'
 	        } else if(type == 'en') {
 	          return 'English'
-	        }
+	        } else if(type == 'jp') {
+	          return '日本語'
+	        } 
     	}
     },
     methods: {
