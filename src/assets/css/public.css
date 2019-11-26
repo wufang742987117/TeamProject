@@ -50,7 +50,7 @@ li {
 }
 
 
-/* A标签去除下划线 */
+/* A标签去除默认样式 */
 a {
   text-decoration: none;
 }

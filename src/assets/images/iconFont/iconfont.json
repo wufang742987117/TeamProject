@@ -1,0 +1,16 @@
+{
+  "id": "1527521",
+  "name": "TeamProject",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "交易所",
+  "glyphs": [
+    {
+      "icon_id": "15693",
+      "name": "安卓",
+      "font_class": "anzhuo",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    }
+  ]
+}
