@@ -3,18 +3,20 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const babelPolyfill = require('babel-polyfill')
+
+const webpack = require('webpack')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-
-
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js'
   },
+  // entry: [babelPolyfill,"./src/main.js"],
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -27,8 +29,18 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'api': resolve('src/api'),
+      'c': resolve('src/components'),
+      'common': resolve('src/common'),
+      'b': resolve('src/base'),
     }
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $:'jquery',
+      JQuery:'jquery'
+    })
+  ],
   module: {
     rules: [
       {
