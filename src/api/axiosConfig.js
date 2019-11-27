@@ -2,9 +2,9 @@ import "babel-polyfill";
 import { Message } from 'element-ui';
 import axios from 'axios'
 import qs from 'qs'
-import { GET } from "common/js/user"
+// import { GET } from "common/js/user"
 import vue from '@/main'
-import { get_userInfo } from "common/js/user"
+// import { get_userInfo } from "common/js/user"
 import store from 'store'
 
 // axios 配置
@@ -16,14 +16,13 @@ axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded
 
 axios.interceptors.request.use(config => {
 
-  console.log(11111,GET('TOKEN'))
   if (config.method === 'post') {
     config.data = qs.stringify(config.data);
   }
-  if (sessionStorage.getItem('__HXHY_MANAGER_TOKEN__')) {
-
-    config.headers.common['token'] = sessionStorage.getItem('__HXHY_MANAGER_TOKEN__');
-  }
+  // if (sessionStorage.getItem('__HXHY_MANAGER_TOKEN__')) {
+  //
+  //   config.headers.common['token'] = sessionStorage.getItem('__HXHY_MANAGER_TOKEN__');
+  // }
   return config;
 }, error => {
   Message.error('错误的传参')

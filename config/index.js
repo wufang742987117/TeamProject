@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'https://www.shydspt.com/api',
+        target: 'https://www.ehecoins.com',
         secure: false,
 //        target: 'http://125.94.40.83/api',
 //        target: 'http://192.168.0.110:8099',

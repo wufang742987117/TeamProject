@@ -10,9 +10,9 @@
 	        <a href="javascript://" class="prev"></a>
 	        <div class="specialistBod">
 	          <div class="speFonts">
-	            {{$t('message.HOME_SPEC_TITLE_1')}}</br>
-	            {{$t('message.HOME_SPEC_TITLE_2')}}</br>
-	            {{$t('message.HOME_SPEC_TITLE_3')}}</br>
+	            {{$t('message.HOME_SPEC_TITLE_1')}}<br>
+	            {{$t('message.HOME_SPEC_TITLE_2')}}<br>
+	            {{$t('message.HOME_SPEC_TITLE_3')}}<br>
 	            {{$t('message.HOME_SPEC_TITLE_4')}}</div>
 	          <div class="speName">
 	            <label>XXX</label>

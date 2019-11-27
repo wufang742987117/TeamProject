@@ -4,15 +4,9 @@
     <el-row>
       <el-col :span="24">
         <div class="home_banner">
-          <el-carousel :interval="5000" height="100%">
-            <!--<el-carousel-item v-for="item in 4" :key="item">
-							{{item}}
-            </el-carousel-item>-->
-            <el-carousel-item class='banner1'>
-							
-            </el-carousel-item>
-            <el-carousel-item class='banner2'>
-							
+          <el-carousel :interval="500000" height="100%">
+            <el-carousel-item v-for="v in bannerData" :key="v.id" :style=" {backgroundImage:'url('+v.img_url+')'}" class="wh50">
+
             </el-carousel-item>
           </el-carousel>
         </div>
@@ -127,6 +121,8 @@
 	/* 交易显示区域*/
   import TradeView from '@/components/home/tradeView'
   import SpeciaList from '@/components/home/speciaList'
+  import { REST } from 'api'
+  import bus from '../../assets/eventBus'
   export default {
   	components:{
   		TradeView,
@@ -134,18 +130,39 @@
   	},
     data() {
       return {
-
+        bannerData:[],
+        language:localStorage.lang || 'zh',
       }
+    },
+    methods:{
+  	  getBanner:function (l) {
+  	    let _this = this;
+        REST.getCarouselList(l).then(function (res) {
+          _this.bannerData = res.data.result.data;
+          _this.bannerData.forEach(function (item, index) {
+            console.log(item);
+          });
+        })
+      }
+    },
+    created:function(){
+      this.getBanner(this.language);
+    },
+    mounted:function () {
+      let _this = this;
+      bus.$on("languages",function (msg) {
+        _this.language = msg;
+        _this.getBanner(_this.language);
+      })
+
+
     }
   }
 </script>
 
 <style>
   @import '../../assets/css/home.css';
-  .banner1 {
-  	background: url(../../assets/images/banner/home_banner-img1.png) 50%;
-  }
-  .banner2 {
-  	background: url(../../assets/images/banner/home_banner-img2.png) 50%;
+  .wh50 {
+    background-position: 50%,50%;
   }
 </style>

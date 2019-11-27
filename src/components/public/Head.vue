@@ -86,6 +86,7 @@
 </template>
 
 <script>
+  import bus from '../../assets/eventBus'
   export default {
     data() {
       return {
@@ -124,6 +125,7 @@
         localStorage.setItem('lang', e);
         this.language = e;
         this.$i18n.locale = e;
+        bus.$emit('languages',e);
         //          window.location.reload()
       },
       showDownTp() {
