@@ -3,6 +3,7 @@
   border-bottom: 1px solid #152029;
   padding: 100px 0;
   background: #0D161D url(../images/bg/logReg_bg.png) center bottom no-repeat;
+  transition: 1s;
 }
 .borderTop{
   position: fixed;
@@ -26,6 +27,7 @@
   border-radius: 4px;
   padding: 0 70px;
   box-sizing: border-box;
+  transition: 1s;
 }
 
 .lR_title {
@@ -35,6 +37,7 @@
   font-size: 32px;
   color: #0D161D;
   margin-bottom: 20px;
+  transition: 1s;
 }
 
 
@@ -71,6 +74,7 @@
 
 .lRlist {
   margin-top: 20px;
+  transition: 1s;
 }
 
 .lRlist .listInput {
@@ -231,4 +235,72 @@
 .vifRight button {
   width: 100%;
   height: 60px;
+}
+
+
+
+
+
+
+
+/* 响应式 */
+@media screen and (max-width:1500px) {
+  .logReg_bg{
+    padding: 90px 0;
+  }
+  .logReg_bod{
+    width: 560px;
+    padding: 0 65px;
+  }
+  .lR_title{
+    height: 95px;
+    line-height: 95px;
+  }
+  .lRlist{
+    margin-top: 18px;
+  }
+  .lRlogin{
+    margin: 18px 0 45px 0;
+  }
+}
+@media screen and (max-width:1400px) {
+  .logReg_bg{
+    padding: 80px 0;
+  }
+  .logReg_bod{
+    width: 540px;
+    padding: 0 60px;
+  }
+  .lR_title{
+    height: 90px;
+    line-height: 90px;
+  }
+  .lRlist{
+    margin-top: 16px;
+  }
+  .lRlogin{
+    margin: 16px 0 40px 0;
+  }
+}
+@media screen and (max-width:1400px) {
+  .logReg_bg{
+    padding: 70px 0;
+  }
+  .logReg_bod{
+    width: 530px;
+    padding: 0 55px;
+  }
+  .lR_title{
+    height: 85px;
+    line-height: 85px;
+  }
+  .lRlist{
+    margin-top: 14px;
+  }
+  .lRlogin{
+    margin: 20px 0 50px 0;
+  }
+  .lRlogin{
+    margin: 14px 0 35px 0;
+  }
 }
