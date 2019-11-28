@@ -17,7 +17,7 @@
 .headLogo {
   width: auto;
   height: 28px;
-  margin: 16px 100px 16px 0;
+  margin: 16px 50px 16px 0;
   display: inline-block;
   float: left;
   transition: 1s;
@@ -450,7 +450,7 @@
   height: auto;
   overflow: hidden;
   background: #0D161D;
-  padding: 70px 50px;
+  padding: 50px 50px;
   box-sizing: border-box;
   margin-top: 0 !important;
   transition: 1s;
@@ -474,7 +474,7 @@
   width: 80%;
   height: auto;
   overflow: hidden;
-  color: #2F4557;
+  color: #495465;
   font-size: 16px;
   margin-top: 10px;
   float: left;
@@ -499,7 +499,7 @@
   border-radius: 100%;
   display: inline-block;
   float: left;
-  background: #2F4557 url(../images/icon/wx_icon.png) center no-repeat;
+  background: #495465 url(../images/icon/wx_icon.png) center no-repeat;
   opacity: 0.7;
   transition: 1s;
 }
@@ -510,7 +510,7 @@
 
 .social .wbIcon {
   margin-left: 30px;
-  background: #2F4557 url(../images/icon/wb_icon.png) center no-repeat;
+  background: #495465 url(../images/icon/wb_icon.png) center no-repeat;
 }
 
 .footerLeft {
@@ -539,7 +539,7 @@
   overflow: hidden;
   display: inline-block;
   float: left;
-  color: #2F4557;
+  color: #495465;
 }
 
 .footerList>div {
@@ -556,7 +556,7 @@
   height: 20px;
   line-height: 20px;
   text-align: right;
-  color: #2F4557;
+  color: #495465;
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -577,7 +577,7 @@
   height: auto;
   line-height: 20px;
   overflow: hidden;
-  color: #516673;
+  color: #74848e;
   font-size: 15px;
   opacity: 0.7;
 }
@@ -637,7 +637,7 @@
   }
 
   .headLogo {
-    margin: 16px 70px 16px 0;
+    margin: 16px 45px 16px 0;
   }
 
   .enGjh {
@@ -645,19 +645,19 @@
   }
 
   .footerBod {
-    padding: 70px 40px;
+    padding: 45px 40px;
   }
 }
 
 @media screen and (max-width:1500px) {
   .headLogo {
-    margin: 16px 60px 16px 0;
+    margin: 16px 40px 16px 0;
   }
 }
 
 @media screen and (max-width:1400px) {
   .headLogo {
-    margin: 16px 50px 16px 0;
+    margin: 16px 35px 16px 0;
   }
 
   .headNav a {
@@ -671,7 +671,7 @@
   }
 
   .headLogo {
-    margin: 16px 40px 16px 0;
+    margin: 16px 30px 16px 0;
   }
 
   .headNav a {
@@ -683,7 +683,7 @@
   }
 
   .footerBod {
-    padding: 70px 30px;
+    padding: 40px 30px;
   }
 }
 
@@ -693,7 +693,7 @@
   }
 
   .headLogo {
-    margin: 16px 30px 16px 0;
+    margin: 16px 25px 16px 0;
   }
 
   .enGjh {
@@ -705,6 +705,6 @@
   }
 
   .footerBod {
-    padding: 70px 20px;
+    padding: 35px 20px;
   }
 }
