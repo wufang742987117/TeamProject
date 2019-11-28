@@ -1,7 +1,7 @@
 <template>
   <div class="page_vessel headBod">
     <!-- logo-->
-    <a href="/" class="headLogo">
+    <a href="/#/" class="headLogo">
       <img src="../../assets/images/icon/projectLogo_1.png">
     </a>
     <!-- nav-->
@@ -17,8 +17,8 @@
     <div class="userList">
       <!-- 未登录 -->
       <div class="userHide" v-show='!token'>
-        <a href="javascript://" @click='login()'>{{$t('message.HEAD_LOGIN')}}</a>
-        <a href="/register" class="bg_0">{{$t('message.HEAD_REGISTER')}}</a>
+        <a href="/#/login">{{$t('message.HEAD_LOGIN')}}</a>
+        <a href="/#/register" class="bg_0">{{$t('message.HEAD_REGISTER')}}</a>
       </div>
       <!-- 已登录-->
       <div class="userShow" v-show='token'>

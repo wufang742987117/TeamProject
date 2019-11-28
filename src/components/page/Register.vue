@@ -92,7 +92,7 @@
       </el-row>
       <!-- 去登录-->
       <el-row class="lRlogin">
-        <a href="/login" class="color_0">已有账号，去登录</a>
+        <a href="/#/login" class="color_0">已有账号，去登录</a>
       </el-row>
     </div>
   </div>
