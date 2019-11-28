@@ -18,7 +18,7 @@
       <!-- 未登录 -->
       <div class="userHide" v-show='!token'>
         <a href="javascript://" @click='login()'>{{$t('message.HEAD_LOGIN')}}</a>
-        <a href="/Register" class="bg_0">{{$t('message.HEAD_REGISTER')}}</a>
+        <a href="/register" class="bg_0">{{$t('message.HEAD_REGISTER')}}</a>
       </div>
       <!-- 已登录-->
       <div class="userShow" v-show='token'>
