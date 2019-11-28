@@ -5,7 +5,8 @@
       <el-col :span="24">
         <div class="home_banner">
           <el-carousel :interval="500000" height="100%">
-            <el-carousel-item v-for="v in bannerData" :key="v.id" :style=" {backgroundImage:'url('+v.img_url+')'}" class="wh50">
+            <el-carousel-item v-for="v in bannerData" :key="v.id" :style=" {backgroundImage:'url('+v.img_url+')'}"
+              class="wh50">
 
             </el-carousel-item>
           </el-carousel>
@@ -118,39 +119,41 @@
 </template>
 
 <script>
-	/* 交易显示区域*/
+  /* 交易显示区域*/
   import TradeView from '@/components/home/tradeView'
   import SpeciaList from '@/components/home/speciaList'
-  import { REST } from 'api'
+  import {
+    REST
+  } from 'api'
   import bus from '../../assets/eventBus'
   export default {
-  	components:{
-  		TradeView,
-  		SpeciaList
-  	},
+    components: {
+      TradeView,
+      SpeciaList
+    },
     data() {
       return {
-        bannerData:[],
-        language:localStorage.lang || 'zh',
+        bannerData: [],
+        language: localStorage.lang || 'zh',
       }
     },
-    methods:{
-  	  getBanner:function (l) {
-  	    let _this = this;
-        REST.getCarouselList(l).then(function (res) {
+    methods: {
+      getBanner: function(l) {
+        let _this = this;
+        REST.getCarouselList(l).then(function(res) {
           _this.bannerData = res.data.result.data;
-          _this.bannerData.forEach(function (item, index) {
+          _this.bannerData.forEach(function(item, index) {
             console.log(item);
           });
         })
       }
     },
-    created:function(){
+    created: function() {
       this.getBanner(this.language);
     },
-    mounted:function () {
+    mounted: function() {
       let _this = this;
-      bus.$on("languages",function (msg) {
+      bus.$on("languages", function(msg) {
         _this.language = msg;
         _this.getBanner(_this.language);
       })
@@ -162,7 +165,4 @@
 
 <style>
   @import '../../assets/css/home.css';
-  .wh50 {
-    background-position: 50%,50%;
-  }
 </style>

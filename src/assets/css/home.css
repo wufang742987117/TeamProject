@@ -10,11 +10,8 @@
   height: 650px;
 }
 
-.hBanner_1 {
-  width: 1200px !important;
-  height: 500px !important;
-  margin: 150px auto 0 auto;
-  background: url(../images/banner/home_banner-img1.png) center right no-repeat;
+.home_banner .wh50 {
+  background-position: 50%,50%;
 }
 
 

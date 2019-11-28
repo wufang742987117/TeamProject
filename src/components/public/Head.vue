@@ -1,7 +1,7 @@
 <template>
   <div class="page_vessel headBod">
     <!-- logo-->
-    <a href="javascript://" class="headLogo">
+    <a href="/" class="headLogo">
       <img src="../../assets/images/icon/projectLogo_1.png">
     </a>
     <!-- nav-->
@@ -18,7 +18,7 @@
       <!-- 未登录 -->
       <div class="userHide" v-show='!token'>
         <a href="javascript://" @click='login()'>{{$t('message.HEAD_LOGIN')}}</a>
-        <a href="javascript://" class="bg_0">{{$t('message.HEAD_REGISTER')}}</a>
+        <a href="/Register" class="bg_0">{{$t('message.HEAD_REGISTER')}}</a>
       </div>
       <!-- 已登录-->
       <div class="userShow" v-show='token'>
@@ -125,7 +125,7 @@
         localStorage.setItem('lang', e);
         this.language = e;
         this.$i18n.locale = e;
-        bus.$emit('languages',e);
+        bus.$emit('languages', e);
         //          window.location.reload()
       },
       showDownTp() {
@@ -183,6 +183,5 @@
   }
 </script>
 <style>
-  @import '../../assets/css/public.css';
   @import '../../assets/css/Head_Footer.css';
 </style>
