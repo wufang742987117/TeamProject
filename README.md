@@ -8,6 +8,16 @@
 # install dependencies
 npm install
 
+###修改下依赖源码
+/node_modules/lib-flexible/flexible.js
+if (width / dpr > 540) {
+           width = 540) * dpr;
+ }
+修改为
+if (width / dpr > 1366) {
+           width = 1366) * dpr;
+ }
+
 # serve with hot reload at localhost:8080
 npm run dev
 
