@@ -69,6 +69,27 @@ a {
 .width_1200 {
   max-width: 1200px;
   margin: 0 auto;
+  transition: 1s;
+}
+
+@media screen and (max-width:1500px) {
+  .width_1200 {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .width_1200 {
+    max-width: 86%;
+  }
+
+}
+
+@media screen and (max-width:1300px) {
+  .width_1200 {
+    max-width: 93%;
+  }
+
 }
 
 

@@ -16,7 +16,7 @@
 
     <!-- 公告 -->
     <el-row class="notice_bg">
-      <el-row class="notice_list">
+      <el-row class="notice_list width_1200">
         <el-col :span="21" class="notice_href">
           <a href="javascript://">{{$t('message.HOME_NOTICE_1')}}</a>
           <a href="javascript://">{{$t('message.HOME_NOTICE_1')}}</a>
@@ -164,6 +164,6 @@
   }
 </script>
 
-<style>
-  @import '../../assets/css/home.css';
+<style scoped src="../../assets/css/home.css">
+  /*@import '../../assets/css/home.css';*/
 </style>

@@ -1,6 +1,6 @@
 /* 背景 */
 .logReg_bg {
-  border-bottom: 1px solid #152029;
+  border-bottom: 1px solid #152029;/*no*/
   padding: 100px 0;
   background: #0D161D url(../images/bg/logReg_bg.png) center bottom no-repeat;
   transition: 1s;
@@ -12,7 +12,7 @@
   right: 0;
   height: 1px;
   overflow: hidden;
-  border-top: 1px solid #152029;
+  border-top: 1px solid #152029;/*no*/
   z-index: 99999999;
 }
 
@@ -33,7 +33,7 @@
 .lR_title {
   height: 100px;
   line-height: 100px;
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;/*no*/
   font-size: 32px;
   color: #0D161D;
   margin-bottom: 20px;
@@ -81,11 +81,11 @@
   position: relative;
   height: 62px;
   border-radius: 4px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #E6E6E6;/*no*/
   box-sizing: border-box;
 }
 .lRlist .listInput:hover{
-  border:1px solid #C0C4CC;
+  border:1px solid #C0C4CC;/*no*/
 }
 .lRlist .listInput .placeholder {
   position: absolute;
@@ -99,6 +99,7 @@
   top: 20px;
   z-index: 99;
   color: #B6B6B6;
+  font-size: 14px;
 }
 
 .lRlist .listInput .pwdLv {
@@ -153,6 +154,7 @@
 
 .listCheck span {
   color: #575757;
+  font-size: 14px;
 }
 
 .listCheck a:hover {
@@ -161,7 +163,7 @@
 
 .lRbtn {
   position: relative;
-  height: 54px;
+  /*height: 54px;*/
   overflow: hidden;
   margin: 20px 0;
   border-radius: 4px;
@@ -185,7 +187,7 @@
 }
 
 .lRlogin {
-  height: 20px;
+  /*height: 20px;*/
   line-height: 20px;
   margin: 20px 0 50px 0;
   text-align: center;
@@ -193,6 +195,7 @@
 
 .lRlogin a {
   opacity: 0.8;
+  font-size: 14px;
 }
 
 .lRlogin a:hover {
@@ -230,6 +233,7 @@
 .vifRight {
   padding-left: 20px;
   box-sizing: border-box;
+
 }
 
 .vifRight button {
@@ -241,34 +245,32 @@
 
 
 
-
-
 /* 响应式 */
-@media screen and (max-width:1500px) {
-  .logReg_bg{
-    padding: 90px 0;
-  }
-  .logReg_bod{
-    width: 560px;
-    padding: 0 65px;
-  }
-  .lR_title{
-    height: 95px;
-    line-height: 95px;
-  }
-  .lRlist{
-    margin-top: 18px;
-  }
-  .lRlogin{
-    margin: 18px 0 45px 0;
-  }
-}
-@media screen and (max-width:1400px) {
+/*@media screen and (max-width:1500px) {*/
+  /*.logReg_bg{*/
+    /*padding: 90px 0;*/
+  /*}*/
+  /*.logReg_bod{*/
+    /*width: 595px;*/
+    /*padding: 0 65px;*/
+  /*}*/
+  /*.lR_title{*/
+    /*height: 95px;*/
+    /*line-height: 95px;*/
+  /*}*/
+  /*.lRlist{*/
+    /*margin-top: 18px;*/
+  /*}*/
+  /*.lRlogin{*/
+    /*margin: 18px 0 45px 0;*/
+  /*}*/
+/*}*/
+@media screen and (max-width:1600px) {
   .logReg_bg{
     padding: 80px 0;
   }
   .logReg_bod{
-    width: 540px;
+    width: 600px;
     padding: 0 60px;
   }
   .lR_title{
@@ -281,26 +283,8 @@
   .lRlogin{
     margin: 16px 0 40px 0;
   }
-}
-@media screen and (max-width:1400px) {
-  .logReg_bg{
-    padding: 70px 0;
-  }
-  .logReg_bod{
-    width: 530px;
-    padding: 0 55px;
-  }
-  .lR_title{
-    height: 85px;
-    line-height: 85px;
-  }
-  .lRlist{
-    margin-top: 14px;
-  }
-  .lRlogin{
-    margin: 20px 0 50px 0;
-  }
-  .lRlogin{
-    margin: 14px 0 35px 0;
+  .codeStatus {
+    margin-top: -5px;
   }
 }
+

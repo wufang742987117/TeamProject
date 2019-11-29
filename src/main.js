@@ -7,6 +7,7 @@ import router from './router'
 import '../theme/index.css'
 import ElementUI from 'element-ui'
 import i18n from './i18n/i18n'
+import 'lib-flexible/flexible'
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false

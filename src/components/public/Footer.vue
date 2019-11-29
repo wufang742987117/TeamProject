@@ -77,6 +77,6 @@
   }
 </script>
 
-<style>
-  @import '../../assets/css/Head_Footer.css';
+<style src="../../assets/css/Head_Footer.css">
+  /*@import '../../assets/css/Head_Footer.css';*/
 </style>

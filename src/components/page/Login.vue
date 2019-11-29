@@ -26,7 +26,7 @@
       <!-- 服务条款-->
       <el-row class="lRlist">
         <el-col :span="24" class="pwdNo">
-          <a href="javascript://" class="color_0">忘记密码？</a>
+          <a href="javascript://" class="color_0" style="font-size: 14px">忘记密码？</a>
         </el-col>
       </el-row>
       <!-- 登录、错误提示-->
@@ -38,7 +38,7 @@
       </el-row>
       <!-- 去登录-->
       <el-row class="lRlogin">
-        <a href="/register" class="color_0">没有账号，去注册</a>
+        <a href="/#/register" class="color_0">没有账号，去注册</a>
       </el-row>
     </div>
   </div>
@@ -55,6 +55,6 @@
   }
 </script>
 
-<style>
-  @import '../../assets/css/Login_Register.css';
+<style src="../../assets/css/Login_Register.css">
+  /*@import '../../assets/css/Login_Register.css';*/
 </style>
