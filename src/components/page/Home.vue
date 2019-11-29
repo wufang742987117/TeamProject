@@ -37,7 +37,7 @@
       <el-row class="width_1200">
         <h1 class="featureT1">{{$t('message.HOME_FETURE_TITLE')}}</h1>
         <h3 class="featureT2">{{$t('message.HOME_FETURE_TIP')}}</h3>
-        <el-row class="width_1200 feature_bod">
+        <el-row class="feature_bod">
           <el-col :span="6" class="featureLi">
             <h2>{{$t('message.HOME_FETURE_1')}}</h2>
             <label>{{$t('message.HOME_FETURE_1_tip')}}</label>
