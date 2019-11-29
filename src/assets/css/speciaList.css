@@ -2,6 +2,8 @@
 .specialist {
   height: 627px;
   background: url(../images/bg/specialist_bg.png) center top no-repeat;
+  background-size: auto 100%;
+  transition: 1s;
 }
 
 .progressBar {
@@ -32,6 +34,7 @@
   opacity: 0.2;
   left: 50px;
   top: 40%;
+  transition: 1s;
 }
 
 .specialistJs .next {
@@ -41,6 +44,7 @@
   background: url(../images/icon/next_icon.png) center no-repeat;
   right: 50px;
   top: 40%;
+  transition: 1s;
 }
 
 .specialistJs .specialistBod {
@@ -82,4 +86,24 @@
   display: inline-block;
   font-size: 18px;
   color: #516470;
+}
+
+
+
+
+@media screen and (max-width:1600px) {
+  .specialist {
+    height: 610px;
+  }
+  .specialistJs .prev,.specialistJs .next {
+    top: 35%;
+  }
+}
+@media screen and (max-width:1500px) {
+  .specialist {
+    height: 600px;
+  }
+  .specialistJs .prev,.specialistJs .next {
+    top: 30%;
+  }
 }

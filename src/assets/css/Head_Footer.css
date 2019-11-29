@@ -475,7 +475,6 @@
   height: auto;
   overflow: hidden;
   color: #495465;
-  font-size: 16px;
   margin-top: 10px;
   float: left;
 }
@@ -578,7 +577,7 @@
   line-height: 20px;
   overflow: hidden;
   color: #74848e;
-  font-size: 15px;
+  font-size: 14px;
   opacity: 0.7;
 }
 
