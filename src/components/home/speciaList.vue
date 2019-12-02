@@ -28,6 +28,4 @@
 <script>
 </script>
 
-<style>
-	@import '../../assets/css/speciaList.css';
-</style>
+<style scoped src='../../assets/css/speciaList.css'></style>

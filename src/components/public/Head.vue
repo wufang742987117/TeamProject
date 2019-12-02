@@ -182,6 +182,4 @@
     }
   }
 </script>
-<style>
-  @import '../../assets/css/Head_Footer.css';
-</style>
+<style scoped src='../../assets/css/Head_Footer.css'></style>

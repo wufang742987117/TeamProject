@@ -30,3 +30,119 @@
   color: #0A93ED;
   border-bottom: 2px solid #0A93ED;
 }
+
+
+
+/* 新闻列表 */
+.newsNotice{
+  padding: 50px 0;
+}
+.newsBod{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  padding-right:20px;
+  box-sizing: border-box;
+}
+.newsList{
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  float: left;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.newsList .newsImg{
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  float: left;
+  transition: 1s;
+}
+.newsList .newsImg img{
+  width: 100%;
+  height: 180px;
+  transition: 1s;
+}
+.newsList .newsFonts{
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  float: left;
+}
+.newsFonts .nFheight{
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  float: left;
+}
+.newsFonts .nFheight h1{
+  width: 100%;
+  height: auto;
+  max-height: 56px;
+  overflow: hidden;
+  line-height: 28px;
+  color: #373737;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: .5s;
+}
+.newsFonts .nFheight p{
+  width: 100%;
+  height: auto;
+  max-height: 48px;
+  overflow: hidden;
+  line-height: 24px;
+  color: #898989;
+  font-size: 16px;
+  transition: .7s;
+}
+.newsFonts .nFtime{
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  float: left;
+  color: #BFBFBF;
+  display: inline-block;
+  font-size: 16px;
+}
+.newsFonts .nFnum{
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  float: right;
+  color: #A8A8A8;
+  display: inline-block;
+  padding-left: 24px;
+  background: url(../images/icon/newsNum.png) left center no-repeat;
+  font-size: 16px;
+}
+.newsList:hover .newsImg img{
+  transform: scale(1.1);
+}
+.newsList:hover .nFheight h1{
+  color: #0A93ED;
+}
+.newsList:hover .nFheight p{
+  color: #383636;
+}
+
+
+
+
+
+
+
+
+/* 最新公告 */
+.noticeCent{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  float: right;
+  border: 1px solid red;box-sizing: border-box;
+}

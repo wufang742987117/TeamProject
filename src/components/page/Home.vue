@@ -163,6 +163,5 @@
   }
 </script>
 
-<style>
-  @import '../../assets/css/home.css';
+<style scoped src='../../assets/css/home.css'>
 </style>

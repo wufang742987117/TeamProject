@@ -55,6 +55,4 @@
   }
 </script>
 
-<style>
-  @import '../../assets/css/Login_Register.css';
-</style>
+<style scoped src='../../assets/css/Login_Register.css'></style>

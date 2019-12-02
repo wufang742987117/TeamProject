@@ -128,7 +128,7 @@
   margin: 0;
 }
 
-.lRlist .listInput input {
+.lRlist .listInput .el-Input{
   height: 60px;
   border: none;
 }
