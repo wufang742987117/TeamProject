@@ -55,7 +55,7 @@
           </div>
         </el-col>
         <el-col :span="8" class="vifRight">
-          <div class="grid-content bg-purple codeStatus">
+          <div class="grid-content bg-purple">
             <el-button type="primary">发送验证码</el-button>
           </div>
         </el-col>
@@ -80,7 +80,7 @@
       <el-row class="lRlist">
         <el-col :span="24" class="listCheck">
           <span>点击“立即注册”表示同意并理解</span>
-          <a href="javascript://" class="color_0" style="font-size: 14px">《服务及隐私条款》</a>
+          <a href="javascript://" class="color_0">《服务及隐私条款》</a>
         </el-col>
       </el-row>
       <!-- 注册、错误提示-->
@@ -130,6 +130,6 @@
   }
 </script>
 
-<style src="../../assets/css/Login_Register.css">
-  /*@import '../../assets/css/Login_Register.css';*/
+<style>
+  @import '../../assets/css/Login_Register.css';
 </style>

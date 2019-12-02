@@ -69,27 +69,6 @@ a {
 .width_1200 {
   max-width: 1200px;
   margin: 0 auto;
-  transition: 1s;
-}
-
-@media screen and (max-width:1500px) {
-  .width_1200 {
-    max-width: 80%;
-  }
-}
-
-@media screen and (max-width:1400px) {
-  .width_1200 {
-    max-width: 86%;
-  }
-
-}
-
-@media screen and (max-width:1300px) {
-  .width_1200 {
-    max-width: 93%;
-  }
-
 }
 
 
@@ -118,33 +97,4 @@ a {
 
 .bg_green {
   background: #12AB68;
-}
-
-
-
-/* 响应式 */
-@media screen and (max-width:1800px) {
-  body{
-    font-size: 15px !important;
-  }
-}
-@media screen and (max-width:1700px) {
-  body{
-    font-size: 16px !important;
-  }
-}
-@media screen and (max-width:1600px) {
-  body{
-    font-size: 17px !important;
-  }
-}
-@media screen and (max-width:1500px) {
-  body{
-    font-size: 18px !important;
-  }
-}
-@media screen and (max-width:1400px) {
-  body{
-    font-size: 19px !important;
-  }
 }

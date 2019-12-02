@@ -16,7 +16,7 @@
 
     <!-- 公告 -->
     <el-row class="notice_bg">
-      <el-row class="notice_list width_1200">
+      <el-row class="notice_list">
         <el-col :span="21" class="notice_href">
           <a href="javascript://">{{$t('message.HOME_NOTICE_1')}}</a>
           <a href="javascript://">{{$t('message.HOME_NOTICE_1')}}</a>
@@ -37,7 +37,7 @@
       <el-row class="width_1200">
         <h1 class="featureT1">{{$t('message.HOME_FETURE_TITLE')}}</h1>
         <h3 class="featureT2">{{$t('message.HOME_FETURE_TIP')}}</h3>
-        <el-row class="feature_bod">
+        <el-row class="width_1200 feature_bod">
           <el-col :span="6" class="featureLi">
             <h2>{{$t('message.HOME_FETURE_1')}}</h2>
             <label>{{$t('message.HOME_FETURE_1_tip')}}</label>
@@ -164,6 +164,6 @@
   }
 </script>
 
-<style scoped src="../../assets/css/home.css">
-  /*@import '../../assets/css/home.css';*/
+<style>
+  @import '../../assets/css/home.css';
 </style>

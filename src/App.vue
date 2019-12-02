@@ -22,8 +22,9 @@
   }
 </script>
 
-<style src="@/assets/css/public.css">
+<style>
   /* 公共样式 */
-  /*@import '/assets/css/public.css';*/
-
+  @import '/assets/css/public.css';
+  /* 字体图标 */
+  @import '/assets/images/iconFont/iconfont.css';
 </style>

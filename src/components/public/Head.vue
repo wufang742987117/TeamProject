@@ -182,6 +182,6 @@
     }
   }
 </script>
-<style scoped src="../../assets/css/Head_Footer.css">
-  /*@import '../../assets/css/Head_Footer.css';*/
+<style>
+  @import '../../assets/css/Head_Footer.css';
 </style>

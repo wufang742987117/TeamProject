@@ -17,7 +17,7 @@
 .headLogo {
   width: auto;
   height: 28px;
-  margin: 16px 50px 0 0;
+  margin: 16px 50px 16px 0;
   display: inline-block;
   float: left;
   transition: 1s;
@@ -26,8 +26,6 @@
 .headLogo img {
   width: auto;
   height: 28px;
-  display: inherit;
-
 }
 
 
@@ -48,7 +46,6 @@
   display: inline-block;
   transition: 1s;
   float: left;
-  font-size: 14px;
 }
 
 .headNav a:hover {
@@ -80,20 +77,17 @@
   width: auto;
   height: 60px;
   float: left;
-  /*padding: 15px 0;*/
+  padding: 15px 0;
   box-sizing: border-box;
 }
 
 .userHide a {
-  /*padding: 15px 0;*/
   width: auto;
   height: 30px;
   line-height: 30px;
   color: #79808a;
   display: inline-block;
   transition: 1s;
-  font-size: 14px;
-  margin-top: 15px;
 }
 
 .userHide a:hover {
@@ -101,7 +95,7 @@
 }
 
 .userHide .bg_0 {
-  border-radius: 30px;/*no*/
+  border-radius: 30px;
   padding: 0 18px;
   margin-left: 25px;
   color: #fff;
@@ -334,7 +328,6 @@
   color: #79808a;
   display: inline-block;
   transition: 1s;
-  font-size: 14px;
 }
 
 .userList .userDown:hover {
@@ -351,7 +344,6 @@
   display: inline-block;
   margin-top: 15px;
   transition: 1s;
-  font-size: 14px;
 }
 
 .userList .userEn:hover {
@@ -429,7 +421,6 @@
   float: left;
   color: #888;
   cursor: pointer;
-  font-size: 14px;
 }
 
 .enGjh label:hover {
@@ -492,7 +483,6 @@
   width: 100%;
   height: auto;
   line-height: 20px;
-  font-size: 25px;
 }
 
 .social {
@@ -549,7 +539,6 @@
   display: inline-block;
   float: left;
   color: #495465;
-  font-size: 16px;
 }
 
 .footerList>div {
@@ -646,9 +635,9 @@
     padding: 0 40px;
   }
 
-  /*.headLogo {*/
-    /*margin: 16px 45px 16px 0;*/
-  /*}*/
+  .headLogo {
+    margin: 16px 45px 16px 0;
+  }
 
   .enGjh {
     right: 40px;
@@ -660,15 +649,15 @@
 }
 
 @media screen and (max-width:1500px) {
-  /*.headLogo {*/
-    /*margin: 16px 40px 16px 0;*/
-  /*}*/
+  .headLogo {
+    margin: 16px 40px 16px 0;
+  }
 }
 
 @media screen and (max-width:1400px) {
-  /*.headLogo {*/
-    /*margin: 16px 35px 16px 0;*/
-  /*}*/
+  .headLogo {
+    margin: 16px 35px 16px 0;
+  }
 
   .headNav a {
     padding: 0 15px;
@@ -680,9 +669,9 @@
     padding: 0 30px;
   }
 
-  /*.headLogo {*/
-    /*margin: 16px 30px 16px 0;*/
-  /*}*/
+  .headLogo {
+    margin: 16px 30px 16px 0;
+  }
 
   .headNav a {
     padding: 0 13px;
@@ -702,9 +691,9 @@
     padding: 0 20px;
   }
 
-  /*.headLogo {*/
-    /*margin: 16px 25px 16px 0;*/
-  /*}*/
+  .headLogo {
+    margin: 16px 25px 16px 0;
+  }
 
   .enGjh {
     right: 20px;

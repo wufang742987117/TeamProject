@@ -3,6 +3,6 @@ import { get, post,getAmount ,deleteBank} from './fetch'
 
 export const REST = {
   getCarouselList(l) {
-    return get(host.getCarouselList+"getBanner/S"+"?language="+l+"&bannerExchange=S&exchange=WCT")
+    return get(host.getCarouselList+"getBanner/S"+"?language="+l+"&bannerExchange=S")
   },
 };

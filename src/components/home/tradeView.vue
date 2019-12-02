@@ -211,6 +211,6 @@
   }
 </script>
 
-<style scoped src="../../assets/css/tradeView.css">
-	/*@import '../../assets/css/tradeView.css';*/
+<style>
+	@import '../../assets/css/tradeView.css';
 </style>

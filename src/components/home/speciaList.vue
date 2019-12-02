@@ -1,5 +1,5 @@
 <template>
-	<div style="background-color: #001624;">
+	<div>
 		<el-row class="specialist">
 	      <!-- 进度条 -->
 	      <el-row class="progressBar">
@@ -28,6 +28,6 @@
 <script>
 </script>
 
-<style src="@/assets/css/speciaList.css">
-	/*@import '../../assets/css/speciaList.css';*/
+<style>
+	@import '../../assets/css/speciaList.css';
 </style>

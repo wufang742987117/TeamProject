@@ -11,7 +11,7 @@
 .priceLimit {
   height: auto;
   background: #fff;
-  border: 1px solid #ECEAEA;/*no*/
+  border: 1px solid #ECEAEA;
   border-radius: 6px;
   box-sizing: border-box;
   margin-top: 40px;
@@ -19,14 +19,14 @@
 }
 
 .priceLimit ul {
-  width: 100%;
+  width: 1200px;
 }
 
 .priceLimit ul li {
   position: relative;
   width: 20%;
   height: 110px;
-  border-right: 1px solid #ECEAEA;/*no*/
+  border-right: 1px solid #ECEAEA;
   box-sizing: border-box;
   background: url(../images/bg/priceBg.png) bottom center no-repeat;
   padding: 20px;
@@ -58,11 +58,10 @@
 
 .priceLimit ul li span {
   width: 60%;
-  height: 20px;
+  height: 16px;
   display: inline-block;
   font-size: 13px;
   font-family: "arial, helvetica, sans-serif";
-  float: left;
 }
 
 .priceLimit ul li label {
@@ -76,7 +75,6 @@
   color: #fff;
   bottom: 25px;
   right: 20px;
-  font-size: 14px;
 }
 
 
@@ -128,7 +126,6 @@
   color: #C0C0C0;
   padding-right: 12px;
   background: url(../images/icon/sort_0.png) center right no-repeat;
-  font-size: 14px;
 }
 
 .tListTitle .title_el {
@@ -164,7 +161,7 @@
   padding: 15px 0;
   background: #fff;
   box-sizing: border-box;
-  border-bottom: 1px solid #F6F6F6;/*no*/
+  border-bottom: 1px solid #F6F6F6;
 }
 
 .tListNum:hover {
@@ -193,7 +190,7 @@
   width: auto;
   max-width: 150px;
   height: 40px;
-  line-height: 15px;
+  line-height: 40px;
   float: left;
 }
 
@@ -269,7 +266,7 @@
 
 .numMore {
   height: 60px;
-  border-top: 1px solid #F6F6F6;/*no*/
+  border-top: 1px solid #F6F6F6;
   transition: 1s;
 }
 
@@ -280,7 +277,6 @@
   color: #D0D3D8;
   text-align: center;
   transition: 1s;
-  font-size: 16px;
 }
 
 .numMore:hover {
@@ -315,8 +311,5 @@
   }
   .tradingList{
     margin-top: 30px;
-  }
-  .tListNum .num_el:nth-child(1) h2 {
-    line-height: 0;
   }
 }
