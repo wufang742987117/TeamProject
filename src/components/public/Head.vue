@@ -6,9 +6,9 @@
     </a>
     <!-- nav-->
     <div class="headNav">
-      <a href="javascript://" class="navHover">{{$t('message.HEAD_INDEX')}}</a>
+      <a href="/#/" class="navHover">{{$t('message.HEAD_INDEX')}}</a>
       <a href="javascript://">{{$t('message.HEAD_TRADE')}}</a>
-      <a href="javascript://">{{$t('message.HEAD_NEWS')}}</a>
+      <a href="/#/newsNotice">{{$t('message.HEAD_NEWS')}}</a>
       <a href="javascript://">{{$t('message.HEAD_NOTICE')}}</a>
       <a href="javascript://">{{$t('message.HEAD_APPLY')}}</a>
       <a href="javascript://">{{$t('message.HEAD_DOWN')}}</a>
@@ -86,7 +86,7 @@
 </template>
 
 <script>
-  import bus from '../../assets/eventBus'
+  import bus from '../../assets/js/eventBus'
   export default {
     data() {
       return {

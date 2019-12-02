@@ -1,0 +1,32 @@
+/* banenr  */
+.newsBg{
+  height: 310px;
+  background: url(../images/bg/newsBg.png) center bottom no-repeat;
+}
+.newsTab{
+  height: auto;
+  overflow: hidden;
+  margin-top: 200px;
+}
+.newsTab a{
+  width: auto;
+  height: 44px;
+  overflow: hidden;
+  line-height: 32px;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+  margin-right: 40px;
+  box-sizing: border-box;
+  opacity: 0.7;
+  transition: 1s;
+}
+.newsTab a:hover{
+  opacity: 1;
+}
+.newsTab .nTabHover{
+  opacity: 1;
+  color: #0A93ED;
+  border-bottom: 2px solid #0A93ED;
+}

@@ -38,7 +38,7 @@
       </el-row>
       <!-- 去登录-->
       <el-row class="lRlogin">
-        <a href="/register" class="color_0">没有账号，去注册</a>
+        <a href="#/register" class="color_0">没有账号，去注册</a>
       </el-row>
     </div>
   </div>

@@ -115,7 +115,6 @@
         </el-row>
       </el-row>
     </el-row>
-
   </div>
 </template>
 
@@ -126,7 +125,7 @@
   import {
     REST
   } from 'api'
-  import bus from '../../assets/eventBus'
+  import bus from '../../assets/js/eventBus'
   export default {
     components: {
       TradeView,

@@ -1,11 +1,12 @@
-/* 去除页面默认边框 */
+/* 去除页面默认边框并设置新属性 */
 html,
 body {
   margin: 0;
   padding: 0;
   font-size: 14px;
   color: #333;
-  overflow-y: auto;
+  min-width: 1200px;
+  overflow: auto;
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
@@ -16,6 +17,7 @@ body {
   height: auto;
   overflow: hidden;
   margin-top: 60px;
+  transition: 0.1s;
 }
 
 
