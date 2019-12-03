@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import Home from '@/components/page/Home'
 import Login from '@/components/page/Login'
 import Register from '@/components/page/Register'
-import NewsNotice from '@/components/page/NewsNotice'
+import News from '@/components/page/News'
+import Notice from '@/components/page/Notice'
 
 Vue.use(Router)
 
@@ -27,11 +28,17 @@ export default new Router({
       name: 'Register',
       component: Register
     },
-    /* 新闻&公告 */
+    /* 新闻 */
     {
-      path: '/newsNotice',
-      name: 'NewsNotice',
-      component: NewsNotice
+      path: '/news',
+      name: 'News',
+      component: News
+    },
+    /* 公告 */
+    {
+      path: '/notice',
+      name: 'Notice',
+      component: Notice
     }
   ]
 })

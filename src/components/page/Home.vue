@@ -24,7 +24,7 @@
           <a href="javascript://">{{$t('message.HOME_NOTICE_1')}}</a>
         </el-col>
         <el-col :span="3" class="notice_more">
-          <a href="javascript://">{{$t('message.HOME_MORE')}}>></a>
+          <a href="/#/notice">{{$t('message.HOME_MORE')}}>></a>
         </el-col>
       </el-row>
     </el-row>
@@ -67,7 +67,7 @@
         <h1 class="newsTitle">{{$t('message.HEAD_NEWS')}}</h1>
         <ul class="newsList">
           <li>
-            <div class="newsImg"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1574423620314&di=48b6e7c6a26c5e0c315edcae018e75ac&imgtype=0&src=http%3A%2F%2Fwww.gov.cn%2Fxinwen%2F2016-09%2F26%2F5112310%2Fimages%2Fc457090f1708468fb295b079e4f11ab7.jpg"></div>
+            <div class="newsImg"><!-- <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1574423620314&di=48b6e7c6a26c5e0c315edcae018e75ac&imgtype=0&src=http%3A%2F%2Fwww.gov.cn%2Fxinwen%2F2016-09%2F26%2F5112310%2Fimages%2Fc457090f1708468fb295b079e4f11ab7.jpg"> --></div>
             <div class="newsTit">{{$t('message.HOME_NEWS_1')}}</div>
             <div class="newsFont">{{$t('message.HOME_NEWS_1_TIP')}}</div>
             <div class="newsTime">[2019-07-30 12:14]</div>
@@ -86,7 +86,7 @@
           </li>
         </ul>
         <div class="newsMore">
-          <el-button type="primary" class="newsMoreBtn">{{$t('message.HOME_NEWS_MORE')}}</el-button>
+          <el-button type="primary" class="newsMoreBtn" @click="gotoNews">{{$t('message.HOME_NEWS_MORE')}}</el-button>
         </div>
       </el-row>
     </el-row>
@@ -146,6 +146,10 @@
             console.log(item);
           });
         })
+      },
+      // 跳转新闻资讯
+      gotoNews(){
+        this.$router.replace('/news')
       }
     },
     created: function() {

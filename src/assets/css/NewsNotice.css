@@ -1,14 +1,18 @@
 /* banenr  */
-.newsBg{
-  height: 310px;
-  background: url(../images/bg/newsBg.png) center bottom no-repeat;
+.newsBg {
+  height: 280px;
+  background: #333 url(../images/bg/newsBg.png) center bottom no-repeat;
+  transition: 1s;
 }
-.newsTab{
+
+.newsTab {
   height: auto;
   overflow: hidden;
-  margin-top: 200px;
+  margin-top: 180px;
+  transition: 1s;
 }
-.newsTab a{
+
+.newsTab a {
   width: auto;
   height: 44px;
   overflow: hidden;
@@ -22,10 +26,12 @@
   opacity: 0.7;
   transition: 1s;
 }
-.newsTab a:hover{
+
+.newsTab a:hover {
   opacity: 1;
 }
-.newsTab .nTabHover{
+
+.newsTab .nTabHover {
   opacity: 1;
   color: #0A93ED;
   border-bottom: 2px solid #0A93ED;
@@ -34,74 +40,90 @@
 
 
 /* 新闻列表 */
-.newsNotice{
-  padding: 50px 0;
+.newsNotice {
+  padding: 70px 0;
+  transition: 1s;
 }
-.newsBod{
+
+.newsBod {
   width: 100%;
   height: auto;
+  min-height: 600px;
   overflow: hidden;
   float: left;
-  padding-right:20px;
+  padding-right: 30px;
   box-sizing: border-box;
 }
-.newsList{
+
+.newsList {
   width: 100%;
   height: 180px;
   overflow: hidden;
   float: left;
   box-sizing: border-box;
   cursor: pointer;
-  margin: 20px 0;
+  margin-bottom: 40px;
+  transition: 1s;
 }
-.newsList .newsImg{
+
+.newsList .newsImg {
   width: 100%;
   height: 180px;
   border-radius: 8px;
   overflow: hidden;
   float: left;
   transition: 1s;
+  background: #f8f8f8 url(../images/icon/newsImgNone.png) center no-repeat;
 }
-.newsList .newsImg img{
-  width: 100%;
+
+.newsList .newsImg img {
+  min-width: 100%;
+  width: auto;
   height: 180px;
   transition: 1s;
 }
-.newsList .newsFonts{
+
+.newsList .newsFonts {
   width: 100%;
   height: 180px;
   overflow: hidden;
   float: left;
+  transition: 1s;
 }
-.newsFonts .nFheight{
+
+.newsFonts .nFheight {
   width: 100%;
   height: 160px;
   overflow: hidden;
   float: left;
+  transition: 1s;
 }
-.newsFonts .nFheight h1{
+
+.newsFonts .nFheight h1 {
   width: 100%;
   height: auto;
   max-height: 56px;
   overflow: hidden;
   line-height: 28px;
-  color: #373737;
+  color: #444;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
   transition: .5s;
 }
-.newsFonts .nFheight p{
+
+.newsFonts .nFheight p {
   width: 100%;
   height: auto;
   max-height: 48px;
   overflow: hidden;
   line-height: 24px;
   color: #898989;
-  font-size: 16px;
+  font-size: 15px;
   transition: .7s;
 }
-.newsFonts .nFtime{
+
+.newsFonts .nFtime {
   width: auto;
   height: 20px;
   line-height: 20px;
@@ -110,7 +132,8 @@
   display: inline-block;
   font-size: 16px;
 }
-.newsFonts .nFnum{
+
+.newsFonts .nFnum {
   width: auto;
   height: 20px;
   line-height: 20px;
@@ -121,28 +144,254 @@
   background: url(../images/icon/newsNum.png) left center no-repeat;
   font-size: 16px;
 }
-.newsList:hover .newsImg img{
+
+.newsList:hover .newsImg img {
   transform: scale(1.1);
 }
-.newsList:hover .nFheight h1{
+
+.newsList:hover .nFheight h1 {
   color: #0A93ED;
 }
-.newsList:hover .nFheight p{
-  color: #383636;
+
+.newsList:hover .nFheight p {
+  color: #333;
 }
-
-
-
 
 
 
 
 
 /* 最新公告 */
-.noticeCent{
+.noticeCent {
   width: 100%;
-  height: 500px;
+  height: auto;
   overflow: hidden;
   float: right;
-  border: 1px solid red;box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.noticeTitle {
+  width: 100%;
+  height: 20px;
+  float: left;
+}
+
+.noticeTitle label {
+  width: 80%;
+  height: 20px;
+  line-height: 20px;
+  float: left;
+  border-left: 3px solid #0A93ED;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.noticeTitle a {
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  float: right;
+  text-align: right;
+  font-size: 16px;
+  overflow: hidden;
+  color: #999;
+  font-weight: 500;
+  transition: 1s;
+}
+
+.noticeTitle a:hover {
+  color: #000;
+}
+
+.noticeList {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  margin-top: 35px;
+  box-sizing: border-box;
+}
+
+.noticeList li {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+
+.noticeList li .linellae {
+  position: absolute;
+  width: 10px;
+  top: 0;
+  left: 3px;
+  bottom: 0;
+  border-left: 1px solid #EAEAEA;
+  z-index: -1;
+}
+
+.noticeList li:first-child .linellae {
+  top: 18px;
+}
+
+.noticeList li:last-child .linellae {
+  top: 0;
+  height: 18px;
+}
+
+.noticeList li .dot {
+  width: 7px;
+  height: 7px;
+  overflow: hidden;
+  border-radius: 100%;
+  background: #BEBEBE;
+  display: inline-block;
+  margin-top: 9px;
+  transition: 1s;
+}
+
+.noticeList li .title {
+  width: 90%;
+  height: auto;
+  max-height: 50px;
+  line-height: 25px;
+  font-size: 15px;
+  color: #6F6F6F;
+  font-weight: 500;
+  float: right;
+  transition: 1s;
+}
+
+.noticeList li .time {
+  width: 90%;
+  height: 20px;
+  line-height: 20px;
+  color: #AEAEAE;
+  float: right;
+  margin: 10px 0 30px 0;
+  display: inline-block;
+  transition: 1s;
+}
+
+.noticeList li:hover .dot {
+  background: #0A93ED;
+}
+
+.noticeList li:hover .title {
+  color: #222;
+}
+.noticeList li .title:hover  {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+
+/* 分页 */
+.pageFy {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  margin: 20px 0 60px 0;
+  padding: 0;
+  transition: 1s;
+}
+
+.pageFy .el-pagination {
+  padding: 2px 0;
+}
+
+
+
+
+
+
+/* 响应式 */
+@media screen and (max-width:1500px) {
+  .newsBg {
+    height: 250px;
+  }
+
+  .newsTab {
+    margin-top: 150px;
+  }
+
+  .newsNotice {
+    padding: 60px 0;
+  }
+
+  .newsList {
+    height: 170px;
+    margin-bottom: 35px;
+  }
+
+  .newsList .newsFonts,
+  .newsList .newsImg,
+  .newsList .newsImg img {
+    height: 170px;
+  }
+
+  .newsFonts .nFheight {
+    height: 150px;
+  }
+
+  .noticeList li .time {
+    margin: 9px 0 28px 0;
+  }
+
+  .newsFonts .nFheight h1 {
+    font-size: 17px;
+  }
+
+  .pageFy {
+    margin: 18px 0 50px 0;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .newsBg {
+    height: 230px;
+  }
+
+  .newsTab {
+    margin-top: 120px;
+  }
+
+  .newsNotice {
+    padding: 50px 0;
+  }
+
+  .newsList {
+    height: 160px;
+    margin-bottom: 30px;
+  }
+
+  .newsList .newsFonts,
+  .newsList .newsImg,
+  .newsList .newsImg img {
+    height: 160px;
+  }
+
+  .newsFonts .nFheight {
+    height: 140px;
+  }
+
+  .noticeList li .time {
+    margin: 8px 0 26px 0;
+  }
+
+  .newsFonts .nFheight h1 {
+    font-size: 16px;
+  }
+
+  .pageFy {
+    margin: 16px 0 40px 0;
+  }
 }
