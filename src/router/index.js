@@ -7,6 +7,7 @@ import News from '@/components/page/News'
 import NewsDetails from '@/components/page/NewsDetails'
 import Notice from '@/components/page/Notice'
 import NoticeDetails from '@/components/page/NoticeDetails'
+import Trade from '@/components/page/Trade'
 
 Vue.use(Router)
 
@@ -29,6 +30,12 @@ export default new Router({
       path: '/register',
       name: 'Register',
       component: Register
+    },
+    /* 交易专区 */
+    {
+      path: '/trade',
+      name: 'Trade',
+      component: Trade
     },
     /* 新闻 */
     {

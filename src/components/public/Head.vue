@@ -7,7 +7,7 @@
     <!-- nav-->
     <div class="headNav">
       <a href="/#/" class="navHover">{{$t('message.HEAD_INDEX')}}</a>
-      <a href="javascript://">{{$t('message.HEAD_TRADE')}}</a>
+      <a href="/#/trade">{{$t('message.HEAD_TRADE')}}</a>
       <a href="/#/news">{{$t('message.HEAD_NEWS')}}</a>
       <a href="/#/notice">{{$t('message.HEAD_NOTICE')}}</a>
       <a href="javascript://">{{$t('message.HEAD_APPLY')}}</a>
