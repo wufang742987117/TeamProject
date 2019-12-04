@@ -216,9 +216,12 @@
   margin-top: 35px;
   box-sizing: border-box;
 }
-.noticeList1{
+
+.noticeList1 {
   margin: 0;
+  cursor: pointer;
 }
+
 .noticeList li {
   position: relative;
   width: 100%;
@@ -228,6 +231,7 @@
   padding-right: 20px;
   box-sizing: border-box;
 }
+
 .noticeList li .linellae {
   position: absolute;
   width: 10px;
@@ -237,6 +241,7 @@
   border-left: 1px solid #EAEAEA;
   z-index: -1;
 }
+
 .noticeList1 li .linellae {
   left: 4px;
 }
@@ -260,11 +265,13 @@
   margin-top: 8px;
   transition: 1s;
 }
+
 .noticeList1 li .dot {
   width: 9px;
   height: 9px;
   margin-top: 7px;
 }
+
 .noticeList li .title {
   width: 90%;
   height: auto;
@@ -276,6 +283,7 @@
   float: right;
   transition: .5s;
 }
+
 .noticeList1 li .title {
   width: 96%;
   font-size: 18px;
@@ -294,7 +302,8 @@
   display: inline-block;
   transition: 1s;
 }
-.noticeList1 li .content{
+
+.noticeList1 li .content {
   width: 96%;
   height: auto;
   overflow: hidden;
@@ -305,9 +314,10 @@
   float: right;
   transition: 1s;
 }
+
 .noticeList1 li .time {
   width: 96%;
-  margin:15px 0 30px 0;
+  margin: 15px 0 30px 0;
 }
 
 .noticeList li:hover .dot {
@@ -317,18 +327,21 @@
 .noticeList li:hover .title {
   color: #222;
 }
+
 .noticeList1 li:hover .title {
   color: #0A93ED;
 }
+
 .noticeList1 li:hover .content {
   color: #333;
 }
 
-.noticeList li .title:hover  {
+.noticeList li .title:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.hotNews{
+
+.hotNews {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -339,16 +352,20 @@
   margin-top: 35px;
   float: left;
 }
-.hotNews ul,.hotNews ul li{
+
+.hotNews ul,
+.hotNews ul li {
   width: 100%;
   height: auto;
   overflow: hidden;
   float: left;
 }
-.hotNews ul li{
+
+.hotNews ul li {
   margin: 12px 0;
 }
-.hotNews ul li span{
+
+.hotNews ul li span {
   width: 19px;
   height: 19px;
   line-height: 19px;
@@ -363,19 +380,23 @@
   margin-top: 2px;
   font-family: sans-serif;
 }
-.hotNews ul li:nth-child(1) span{
+
+.hotNews ul li:nth-child(1) span {
   background: #0A93ED;
   color: #fff;
 }
-.hotNews ul li:nth-child(2) span{
+
+.hotNews ul li:nth-child(2) span {
   background: #0A93ED;
   color: #fff;
 }
-.hotNews ul li:nth-child(3) span{
+
+.hotNews ul li:nth-child(3) span {
   background: #0A93ED;
   color: #fff;
 }
-.hotNews ul li a{
+
+.hotNews ul li a {
   width: 88%;
   height: auto;
   max-height: 46px;
@@ -385,7 +406,8 @@
   color: #6F6F6F;
   float: right;
 }
-.hotNews ul li a:hover{
+
+.hotNews ul li a:hover {
   color: #333;
   text-decoration: underline;
 }
@@ -410,6 +432,164 @@
 
 
 
+
+
+/* 新闻详情 */
+.nDtitle {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  border-bottom: 1px solid #eee;
+  margin-top: 70px;
+  padding-bottom: 40px;
+  transition: 1s;
+}
+
+.nDtitle h1 {
+  width: 100%;
+  height: auto;
+  line-height: 35px;
+  overflow: hidden;
+  float: left;
+  font-size: 26px;
+  color: #1B1B1B;
+  margin-bottom: 20px;
+  font-weight: 500;
+  transition: 1s;
+}
+.noticeTit{
+  width: 100%;
+  height: auto;
+  line-height: 35px;
+  overflow: hidden;
+  float: left;
+  font-size: 26px;
+  color: #1B1B1B;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  transition: 1s;
+}
+.nDtitle label {
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  color: #A1A1A1;
+  margin-right: 70px;
+}
+
+.nDtitle span {
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  color: #A8A8A8;
+  padding-left: 25px;
+  background: url(../images/icon/newsNum.png) left center no-repeat;
+}
+
+.nDcontent {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  overflow: hidden;
+  float: left;
+  padding: 50px 0;
+  transition: 1s;
+}
+
+.nDspace {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  border-top: 1px solid #eee;
+  margin-bottom: 100px;
+  padding-top: 20px;
+  transition: 1s;
+}
+.noticeName{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  margin-bottom: 150px;
+  padding-top: 20px;
+  transition: 1s;
+}
+.noticeName p{
+  width: 100%;
+  height:auto;
+  line-height: 30px;
+  float: left;
+  text-align: right;
+  font-size: 22px;
+  color: #393939;
+}
+.noticeName label{
+  width: 100%;
+  height:auto;
+  line-height: 30px;
+  float: left;
+  text-align: right;
+  font-size: 18px;
+  color: #717171;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.nDspace>div {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.nDspace>div label {
+  width: auto;
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  display: inline-block;
+  margin-right: 10px;
+  color: #6A6A6A;
+}
+
+.nDspace>div a {
+  width: 80%;
+  height: auto;
+  line-height: 25px;
+  overflow: hidden;
+  float: left;
+  display: inline-block;
+  color: #6A6A6A;
+}
+
+.nDspace>div a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.nDspace .noSpace {
+  opacity: 0.6;
+}
+
+.nDspace .noSpace a:hover {
+  text-decoration: none;
+  color: #6A6A6A;
+  cursor: auto;
+}
 
 
 
@@ -446,12 +626,29 @@
     margin: 9px 0 28px 0;
   }
 
-  .newsFonts .nFheight h1,.noticeList1 li .title {
+  .newsFonts .nFheight h1,
+  .noticeList1 li .title {
     font-size: 17px;
   }
 
   .pageFy {
     margin: 18px 0 50px 0;
+  }
+
+  .nDtitle {
+    margin-top: 50px;
+    padding-bottom: 35px;
+  }
+
+  .nDcontent {
+    padding: 45px 0;
+  }
+
+  .nDspace {
+    margin-bottom: 80px;
+  }
+  .noticeName{
+    margin-bottom: 130px;
   }
 }
 
@@ -487,11 +684,28 @@
     margin: 8px 0 26px 0;
   }
 
-  .newsFonts .nFheight h1,.noticeList1 li .title  {
+  .newsFonts .nFheight h1,
+  .noticeList1 li .title {
     font-size: 16px;
   }
 
   .pageFy {
     margin: 16px 0 40px 0;
+  }
+
+  .nDtitle {
+    margin-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .nDcontent {
+    padding: 40px 0;
+  }
+
+  .nDspace {
+    margin-bottom: 60px;
+  }
+  .noticeName{
+    margin-bottom: 110px;
   }
 }
