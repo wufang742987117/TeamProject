@@ -114,7 +114,7 @@
           <div class="grid-content bg-purple-light noticeCent">
             <div class="noticeTitle">
               <label>最新公告</label>
-              <a href="javascript://" class="el-icon-arrow-right"></a>
+              <a href="/#/notice" class="el-icon-arrow-right"></a>
             </div>
             <div class="noticeList">
               <ul>

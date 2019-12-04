@@ -216,15 +216,18 @@
   margin-top: 35px;
   box-sizing: border-box;
 }
-
+.noticeList1{
+  margin: 0;
+}
 .noticeList li {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
   float: left;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
-
 .noticeList li .linellae {
   position: absolute;
   width: 10px;
@@ -233,6 +236,9 @@
   bottom: 0;
   border-left: 1px solid #EAEAEA;
   z-index: -1;
+}
+.noticeList1 li .linellae {
+  left: 4px;
 }
 
 .noticeList li:first-child .linellae {
@@ -251,20 +257,31 @@
   border-radius: 100%;
   background: #BEBEBE;
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
   transition: 1s;
 }
-
+.noticeList1 li .dot {
+  width: 9px;
+  height: 9px;
+  margin-top: 7px;
+}
 .noticeList li .title {
   width: 90%;
   height: auto;
-  max-height: 50px;
-  line-height: 25px;
+  max-height: 46px;
+  line-height: 23px;
   font-size: 15px;
-  color: #6F6F6F;
+  color: #666;
   font-weight: 500;
   float: right;
-  transition: 1s;
+  transition: .5s;
+}
+.noticeList1 li .title {
+  width: 96%;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #444;
 }
 
 .noticeList li .time {
@@ -277,6 +294,21 @@
   display: inline-block;
   transition: 1s;
 }
+.noticeList1 li .content{
+  width: 96%;
+  height: auto;
+  overflow: hidden;
+  max-height: 72px;
+  line-height: 24px;
+  font-size: 15px;
+  color: #898989;
+  float: right;
+  transition: 1s;
+}
+.noticeList1 li .time {
+  width: 96%;
+  margin:15px 0 30px 0;
+}
 
 .noticeList li:hover .dot {
   background: #0A93ED;
@@ -285,9 +317,77 @@
 .noticeList li:hover .title {
   color: #222;
 }
+.noticeList1 li:hover .title {
+  color: #0A93ED;
+}
+.noticeList1 li:hover .content {
+  color: #333;
+}
+
 .noticeList li .title:hover  {
   text-decoration: underline;
   cursor: pointer;
+}
+.hotNews{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #E3E3E3;
+  border-radius: 4px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 35px;
+  float: left;
+}
+.hotNews ul,.hotNews ul li{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+.hotNews ul li{
+  margin: 12px 0;
+}
+.hotNews ul li span{
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  border-radius: 100%;
+  background: #f5f5f5;
+  color: #666;
+  text-align: center;
+  overflow: hidden;
+  float: left;
+  display: inline-block;
+  margin-top: 2px;
+  font-family: sans-serif;
+}
+.hotNews ul li:nth-child(1) span{
+  background: #0A93ED;
+  color: #fff;
+}
+.hotNews ul li:nth-child(2) span{
+  background: #0A93ED;
+  color: #fff;
+}
+.hotNews ul li:nth-child(3) span{
+  background: #0A93ED;
+  color: #fff;
+}
+.hotNews ul li a{
+  width: 88%;
+  height: auto;
+  max-height: 46px;
+  line-height: 23px;
+  overflow: hidden;
+  font-size: 15px;
+  color: #6F6F6F;
+  float: right;
+}
+.hotNews ul li a:hover{
+  color: #333;
+  text-decoration: underline;
 }
 
 
@@ -346,7 +446,7 @@
     margin: 9px 0 28px 0;
   }
 
-  .newsFonts .nFheight h1 {
+  .newsFonts .nFheight h1,.noticeList1 li .title {
     font-size: 17px;
   }
 
@@ -387,7 +487,7 @@
     margin: 8px 0 26px 0;
   }
 
-  .newsFonts .nFheight h1 {
+  .newsFonts .nFheight h1,.noticeList1 li .title  {
     font-size: 16px;
   }
 

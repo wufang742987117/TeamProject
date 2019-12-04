@@ -17,91 +17,52 @@
         <!-- 新闻列表 -->
         <el-col :span="17">
           <div class="grid-content bg-purple newsBod">
-            <el-row :gutter="24" class="newsList">
-              <el-col :span="8">
-                <div class="grid-content bg-purple newsImg">
-                  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575288116882&di=da78b268b624af21a2ce570459e27974&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F130204%2F240459-130204130A567.jpg" />
-                </div>
-              </el-col>
-              <el-col :span="16">
-                <div class="grid-content bg-purple newsFonts">
-                  <div class="nFheight">
-                    <h1>法学教授：美国不需要加密货币 只需要升级系统</h1>
-                    <p>今天，美国参议院银行、住房和城市事务委员会将就数字货币和区块链的监管话题举办听证会。加州大学欧文分校……</p>
-                  </div>
-                  <label class="nFtime">2019/10/21 14:23</label>
-                  <label class="nFnum">1275</label>
-                </div>
-              </el-col>
-            </el-row>
-            <el-row :gutter="24" class="newsList">
-              <el-col :span="8">
-                <div class="grid-content bg-purple newsImg">
-
-                </div>
-              </el-col>
-              <el-col :span="16">
-                <div class="grid-content bg-purple newsFonts">
-                  <div class="nFheight">
-                    <h1>IMF阿德里安：稳定币应与央行储备挂钩 中国央行 很可能全球首发CBDC</h1>
-                    <p>从诞生至今，加密货币（Crypto currency）价值的剧烈波动始终是其致命伤，而后诞生的挂钩美元或其他货币的稳定……</p>
-                  </div>
-                  <label class="nFtime">2019/10/21 14:23</label>
-                  <label class="nFnum">1275</label>
-                </div>
-              </el-col>
-            </el-row>
-            <el-row :gutter="24" class="newsList">
-              <el-col :span="8">
-                <div class="grid-content bg-purple newsImg">
-                  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575288130128&di=8b0fba74155fd771e2749f69ac534e1b&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F130107%2F235111-13010gf53321.jpg" />
-                </div>
-              </el-col>
-              <el-col :span="16">
-                <div class="grid-content bg-purple newsFonts">
-                  <div class="nFheight">
-                    <h1>金色深度丨加密货币衍生品：市场的一个角落还是 市场本身？</h1>
-                    <p>加密货币衍生品“大战”的序幕已经拉开了，就在洲际交易所旗下加密货币Bakkt推出的前一天，芝加哥商品交易所……</p>
-                  </div>
-                  <label class="nFtime">2019/10/21 14:23</label>
-                  <label class="nFnum">1275</label>
-                </div>
-              </el-col>
-            </el-row>
-            <el-row :gutter="24" class="newsList">
-              <el-col :span="8">
-                <div class="grid-content bg-purple newsImg">
-                  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575285437514&di=6fc82ee336bb200dd4318954d3d05459&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F130107%2F235111-13010GK53311.jpg" />
-                </div>
-              </el-col>
-              <el-col :span="16">
-                <div class="grid-content bg-purple newsFonts">
-                  <div class="nFheight">
-                    <h1>国信证券金融业首席分析师王剑：央行数字货币会 如何改变我们的生活</h1>
-                    <p>数字货币是货币演进过程中的最新形式，它的推广可能会对各方面产生影响，尤其对经营货币的商业银行会有重大……</p>
-                  </div>
-                  <label class="nFtime">2019/10/21 14:23</label>
-                  <label class="nFnum">1275</label>
-                </div>
-              </el-col>
-            </el-row>
-            <el-row :gutter="24" class="newsList">
-              <el-col :span="8">
-                <div class="grid-content bg-purple newsImg">
-                  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575288159233&di=87fe55dfee6c8036f2093581eeeafac7&imgtype=0&src=http%3A%2F%2Fimg1.juimg.com%2F170220%2F330620-1F22005320630.jpg" />
-                </div>
-              </el-col>
-              <el-col :span="16">
-                <div class="grid-content bg-purple newsFonts">
-                  <div class="nFheight">
-                    <h1>金融时报：Facebook的Libra将使“热钱”更泛</h1>
-                    <p>英国金融时报称，Facebook提出的加密货币Libra将使热钱更容易在全球范围内流动。热钱（Hot Money），又称游……</p>
-                  </div>
-                  <label class="nFtime">2019/10/21 14:23</label>
-                  <label class="nFnum">1275</label>
-                </div>
-              </el-col>
-            </el-row>
+            <div class="noticeList noticeList1">
+              <ul>
+                <li>
+                  <div class="linellae"></div>
+                  <span class="dot"></span>
+                  <h1 class="title">波场TRON转账数突破1亿个</h1>
+                  <p class="content">根据TRONSCAN波场区块链浏览器最新数据显示，波场TRON转账数达到101855068，突破1亿个。波场TRON各项数据一直稳中前进，波场生态逐渐强大的同时，也将迎来更多交易量，助力区块链技术真正实现价值落地 ……</p>
+                  <label class="time">2019/12/03 15:34</label>
+                </li>
+                <li>
+                  <div class="linellae"></div>
+                  <span class="dot"></span>
+                  <h1 class="title">加密货币分析师：等待比特币再跌10%的投资者“玩错了游戏”</h1>
+                  <p class="content">据DailyHODL报道，加密货币分析师Rekt Capital今日指出，比特币价格在经历了过去两轮减半后大幅飙升(3420%和4080%)。至于等待比特币再跌10%的投资者，Rekt表示，他们“玩错了游戏”，可能会错过在下一轮牛市到来之前积累比特币的机会 ……</p>
+                  <label class="time">2019/12/01 10:21</label>
+                </li>
+                <li>
+                  <div class="linellae"></div>
+                  <span class="dot"></span>
+                  <h1 class="title">BTC高点逐步下移 反复测试支撑破位在即</h1>
+                  <p class="content">分析师K神表示，首先，周线阴线收低，币价连续下探录得两连阴，价格维持短期均线下方，周线依旧是空头趋势，连续两周受到5周均线8800-9000附近的压制，此位是空头防守点，10周均线与20周均线保持向下排列 ……</p>
+                  <label class="time">2019/11/24 17:39</label>
+                </li>
+                <li>
+                  <div class="linellae"></div>
+                  <span class="dot"></span>
+                  <h1 class="title">湖州市市长钱三雄：湖州将努力构建区块链应用发展的先发优势</h1>
+                  <p class="content">11月17日，2019国际区块链大会在浙江德清举办。湖州市委副书记、市长钱三雄表示，湖州将结合自身基础的优势，全力推进区块链与互联网、云计算、大数据、人工智能等信息技术的融合，推动区块链技术应用于新能源汽车 ……</p>
+                  <label class="time">2019/11/21 08:47</label>
+                </li>
+                <li>
+                  <div class="linellae"></div>
+                  <span class="dot"></span>
+                  <h1 class="title">多数主流币前底颈线支撑位测试有效 但市场仍缺乏上破量能</h1>
+                  <p class="content">根据OKEx现货显示，截至欧盘开始，BTC暂报价8447.6美元（-0.91%）。 总结上周主流币市场走势，前底颈线位置的支撑强度已获得市场验证，OKEx分析师Neo认为，币价多次获得支撑也意味着大量多头在该位置有很强的承接能力，但需要注意的是承接力较强只是相对市场稳定时的状态 ……</p>
+                  <label class="time">2019/11/20 11:21</label>
+                </li>
+                <li>
+                  <div class="linellae"></div>
+                  <span class="dot"></span>
+                  <h1 class="title">区块链板块收涨1.18% 数字货币板块收涨2.01%</h1>
+                  <p class="content">A股收盘，上证指数收涨0.62%，区块链板块收涨1.18%，数字货币板块收涨2.01%。区块链板块中195只概念股中，139只上涨，46只为跌，10只平盘，其中天夏智慧等6个股票涨停，无跌停个股。数字货币板块31只概念股中，25只上涨，6只下跌 ……</p>
+                  <label class="time">2019/11/20 11:21</label>
+                </li>
+              </ul>
+            </div>
           </div>
           <!-- 分页-->
           <div class="pageFy">
@@ -113,40 +74,50 @@
         <el-col :span="7">
           <div class="grid-content bg-purple-light noticeCent">
             <div class="noticeTitle">
-              <label>最新公告</label>
-              <a href="javascript://" class="el-icon-arrow-right"></a>
+              <label>热门文章</label>
+              <a href="/#/news" class="el-icon-arrow-right"></a>
             </div>
-            <div class="noticeList">
+            <div class="hotNews">
               <ul>
                 <li>
-                  <div class="linellae"></div>
-                  <span class="dot"></span>
-                  <h1 class="title">Polkadot诸王上线降至，部分交易所DOT期货价格出现暴跌</h1>
-                  <label class="time">8 分钟前</label>
+                  <span>1</span>
+                  <a href="javascript://">法学教授：美国不需要加密货币 只需要升级系统</a>
                 </li>
                 <li>
-                  <div class="linellae"></div>
-                  <span class="dot"></span>
-                  <h1 class="title">中币（ZB）午行情：BTC上涨至8500美元</h1>
-                  <label class="time">2 天前</label>
+                  <span>2</span>
+                  <a href="javascript://">如果比特币是一家上市公司 福布斯排行</a>
                 </li>
                 <li>
-                  <div class="linellae"></div>
-                  <span class="dot"></span>
-                  <h1 class="title">MXC抹茶将于本周三开启“抹茶周三见”社区直播，解答社区疑问</h1>
-                  <label class="time">3 天前</label>
+                  <span>3</span>
+                  <a href="javascript://">IMF阿德里安：稳定币应与央行储备挂钩 中国央行很可能全球首发CBDC</a>
                 </li>
                 <li>
-                  <div class="linellae"></div>
-                  <span class="dot"></span>
-                  <h1 class="title">区块链板块午后继续拉升，四方金创拉升封板</h1>
-                  <label class="time">3 天前</label>
+                  <span>4</span>
+                  <a href="javascript://">金色深度丨加密货币衍生品：市场的一个角落还是 市场本身？</a>
                 </li>
                 <li>
-                  <div class="linellae"></div>
-                  <span class="dot"></span>
-                  <h1 class="title">TokenInsight数字资产量化大赛全国行将在上海、深圳、成都举行</h1>
-                  <label class="time">5 天前</label>
+                  <span>5</span>
+                  <a href="javascript://">国信证券金融业首席分析师王剑：央行数字货币会 如何改变我们的生活</a>
+                </li>
+                <li>
+                  <span>6</span>
+                  <a href="javascript://">区块链进入真实房地产 为你带来哪些生活改变？</a>
+                </li>
+                <li>
+                  <span>7</span>
+                  <a href="javascript://">中国网球协会发布国内首张“区块链+物联网”网球运动技术等级评定员</a>
+                </li>
+                <li>
+                  <span>8</span>
+                  <a href="javascript://">嘉楠CEO张楠赓：未来全球芯片中心在中国</a>
+                </li>
+                <li>
+                  <span>9</span>
+                  <a href="javascript://">BiKi创始人Winter：一封致BiKi用户和行业伙伴的公开信</a>
+                </li>
+                <li>
+                  <span>10</span>
+                  <a href="javascript://">2019金色电音节上海站圆满收官</a>
                 </li>
               </ul>
             </div>
