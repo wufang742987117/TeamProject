@@ -458,7 +458,8 @@
   font-weight: 500;
   transition: 1s;
 }
-.noticeTit{
+
+.noticeTit {
   width: 100%;
   height: auto;
   line-height: 35px;
@@ -474,6 +475,7 @@
   padding-bottom: 40px;
   transition: 1s;
 }
+
 .nDtitle label {
   width: auto;
   height: 20px;
@@ -517,7 +519,8 @@
   padding-top: 20px;
   transition: 1s;
 }
-.noticeName{
+
+.noticeName {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -526,18 +529,20 @@
   padding-top: 20px;
   transition: 1s;
 }
-.noticeName p{
+
+.noticeName p {
   width: 100%;
-  height:auto;
+  height: auto;
   line-height: 30px;
   float: left;
   text-align: right;
   font-size: 22px;
   color: #393939;
 }
-.noticeName label{
+
+.noticeName label {
   width: 100%;
-  height:auto;
+  height: auto;
   line-height: 30px;
   float: left;
   text-align: right;
@@ -590,6 +595,37 @@
   color: #6A6A6A;
   cursor: auto;
 }
+
+
+.uPlist {
+  position: fixed;
+  width: 45px;
+  height: auto;
+  overflow: hidden;
+  bottom: 40%;
+  left: 50%;
+  margin-left: 650px;
+}
+
+.uPlist a {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 10px;
+  background: #0A93ED url(../images/icon/newsNav_icon.png) center no-repeat;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.uPlist a:last-child {
+  margin: 0;
+  background: #d9d9d9 url(../images/icon/upTop_icon.png) center no-repeat;
+}
+
+.uPlist a:last-child:hover {
+  background-color: #ccc;
+}
+
 
 
 
@@ -647,7 +683,8 @@
   .nDspace {
     margin-bottom: 80px;
   }
-  .noticeName{
+
+  .noticeName {
     margin-bottom: 130px;
   }
 }
@@ -705,7 +742,8 @@
   .nDspace {
     margin-bottom: 60px;
   }
-  .noticeName{
+
+  .noticeName {
     margin-bottom: 110px;
   }
 }

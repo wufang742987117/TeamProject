@@ -14,12 +14,12 @@
 
     <div class="width_1200 newsNotice">
       <el-row>
-        <!-- 新闻列表 -->
+        <!-- 公告列表 -->
         <el-col :span="17">
           <div class="grid-content bg-purple newsBod">
             <div class="noticeList noticeList1">
               <ul>
-                <li @click="gotoNewsDetails">
+                <li @click="gotoNoticeDetails">
                   <div class="linellae"></div>
                   <span class="dot"></span>
                   <h1 class="title">波场TRON转账数突破1亿个</h1>
@@ -27,7 +27,7 @@
                     ……</p>
                   <label class="time">2019/12/03 15:34</label>
                 </li>
-                <li @click="gotoNewsDetails">
+                <li @click="gotoNoticeDetails">
                   <div class="linellae"></div>
                   <span class="dot"></span>
                   <h1 class="title">加密货币分析师：等待比特币再跌10%的投资者“玩错了游戏”</h1>
@@ -36,7 +36,7 @@
                     ……</p>
                   <label class="time">2019/12/01 10:21</label>
                 </li>
-                <li @click="gotoNewsDetails">
+                <li @click="gotoNoticeDetails">
                   <div class="linellae"></div>
                   <span class="dot"></span>
                   <h1 class="title">BTC高点逐步下移 反复测试支撑破位在即</h1>
@@ -44,7 +44,7 @@
                     ……</p>
                   <label class="time">2019/11/24 17:39</label>
                 </li>
-                <li @click="gotoNewsDetails">
+                <li @click="gotoNoticeDetails">
                   <div class="linellae"></div>
                   <span class="dot"></span>
                   <h1 class="title">湖州市市长钱三雄：湖州将努力构建区块链应用发展的先发优势</h1>
@@ -52,7 +52,7 @@
                     ……</p>
                   <label class="time">2019/11/21 08:47</label>
                 </li>
-                <li @click="gotoNewsDetails">
+                <li @click="gotoNoticeDetails">
                   <div class="linellae"></div>
                   <span class="dot"></span>
                   <h1 class="title">多数主流币前底颈线支撑位测试有效 但市场仍缺乏上破量能</h1>
@@ -61,7 +61,7 @@
                     ……</p>
                   <label class="time">2019/11/20 11:21</label>
                 </li>
-                <li @click="gotoNewsDetails">
+                <li @click="gotoNoticeDetails">
                   <div class="linellae"></div>
                   <span class="dot"></span>
                   <h1 class="title">区块链板块收涨1.18% 数字货币板块收涨2.01%</h1>
@@ -140,9 +140,9 @@
 <script>
   export default {
     methods: {
-      // 跳转新闻详情
-      gotoNewsDetails() {
-        this.$router.replace('/newsDetails')
+      // 跳转公告详情
+      gotoNoticeDetails() {
+        this.$router.replace('/noticeDetails')
       }
     },
 

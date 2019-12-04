@@ -15,6 +15,11 @@
           <label>2019-10-24 15:24</label>
       </div>
     </div>
+    <!-- 置顶&列表 -->
+    <div class="uPlist">
+      <a href="/#/notice"></a>
+      <a href="#"></a>
+    </div>
   </div>
 </template>
 
