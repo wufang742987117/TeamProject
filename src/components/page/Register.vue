@@ -130,4 +130,7 @@
   }
 </script>
 
-<style scoped src='@/assets/css/Login_Register.css'></style>
+<!-- <style scoped src='@/assets/css/Login_Register.css'></style> -->
+<style>
+  @import url("../../assets/css/Login_Register.css");
+</style>
