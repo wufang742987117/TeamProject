@@ -121,7 +121,7 @@
 
 
     <!-- 实时交易 -->
-    <div class="realTime" >
+    <div class="realTime">
       <div class="tradeTitle">实时交易</div>
       <div class="realTimeBod">
         <div class="realTimeHead">
@@ -522,8 +522,8 @@
       <div class="tradeTitle">
         <div class="hcTit">盘口</div>
         <div class="hcTit">
-          <a href='javascript://' class="hcTitAction"  onclick="con(1)">盘口</a>
-          <a href='javascript://' onclick="con(2)">实时交易</a>
+          <a href='javascript://' class="hcTitAction">盘口</a>
+          <a href='javascript://'>实时交易</a>
         </div>
       </div>
       <div class="handicapBod">
@@ -755,10 +755,19 @@
 
     <!-- 委托 -->
     <div class="entrust ">
-      <div class="tradeTitle">委托</div>
-      <div class="entrustBod">
-
-      </div>
+      <el-tabs v-model="activeName" class="entrustBod" type="card" @tab-click="handleClick">
+        <el-tab-pane label="当前委托" name="first">
+          <div class="entrustTable" >
+1
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="历史委托" name="second">
+          <div>
+           2
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="交易记录" name="third">角色管理</el-tab-pane>
+      </el-tabs>
     </div>
 
 
@@ -766,14 +775,59 @@
 </template>
 
 <script>
-
-  flag = 'p1';
-  function con(i){
-    /* document.getElementById(flag).style.display = "none";
-       document.getElementById("p" + i).style.display = "inline"; */
-       alert(i);
-       flag = "p" + i;
-  }
+  export default {
+    data() {
+      return {
+        activeName: 'first',
+      };
+    },
+    methods: {
+      handleClick(tab, event) {
+        console.log(tab, event);
+      }
+    }
+  };
 </script>
 
 <style scoped src='../../assets/css/trade.css'></style>
+<style>
+  /* 底部列表区域部分css*/
+  .el-tabs--card>.el-tabs__header {
+    border: 0;
+    margin: 0;
+    height: 60px;
+    box-sizing: border-box;
+    border-top: 4px solid #000;
+    border-bottom: 1px solid #000;
+    background: #1F2529;
+    padding: 0 20px 0 0;
+  }
+
+  .el-tabs__nav-wrap {
+    margin: 0;
+  }
+
+  .el-tabs--card>.el-tabs__header .el-tabs__nav,
+  .el-tabs--card>.el-tabs__header .el-tabs__item.is-active,
+  .el-tabs--card>.el-tabs__header .el-tabs__item {
+    border: 0;
+  }
+
+  .el-tabs__item {
+    height: 55px;
+    line-height: 55px;
+    border: 0;
+    color: #97A4AC;
+    font-size: 16px;
+  }
+
+  .el-tabs__item:hover {
+    color: #97A4AC;
+    cursor: pointer;
+  }
+
+  .el-tabs__item.is-active {
+    color: #fff;
+  }
+
+</style>
